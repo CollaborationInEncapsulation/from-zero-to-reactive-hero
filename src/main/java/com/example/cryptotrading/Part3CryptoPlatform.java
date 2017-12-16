@@ -15,9 +15,9 @@ public class Part3CryptoPlatform {
                                 (req, res) -> StatisticUtils
                                         .transform(
                                                 CryptoConnectionHolder.get(),
-                                                NettyUtils.prepareInput(req)
+                                                null // TODO replace with
+                                                //NettyUtils.prepareInput(req)
                                                         //TODO map to long
-                                                        .map(Long::valueOf)
                                         )
                                         .map(JsonUtils::writeAsString)
                                         // TODO: Add backpressure handling
