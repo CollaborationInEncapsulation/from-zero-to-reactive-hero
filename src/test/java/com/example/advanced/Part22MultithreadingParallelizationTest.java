@@ -2,18 +2,14 @@ package com.example.advanced;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.reactivestreams.Publisher;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-import reactor.core.scheduler.Schedulers;
 import reactor.test.StepVerifier;
 
 import java.time.Duration;
-import java.util.concurrent.Callable;
 
-import static com.example.advanced.Part2MultithreadingParallelization.*;
+import static com.example.advanced.Part22MultithreadingParallelization.*;
 
-public class Part2MultithreadingParallelizationTest {
+public class Part22MultithreadingParallelizationTest {
 
     @Test
     public void publishOnParallelThreadSchedulerTest() {

@@ -25,8 +25,9 @@ dependencies {
     compile group: 'io.projectreactor.ipc', name: 'reactor-netty', version: reactorNettyVersion
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonVersion
 
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    testCompile group: 'io.projectreactor', name: 'reactor-test', version: reactorVersion
+    compile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'io.projectreactor', name: 'reactor-test', version: reactorVersion
+
     testCompile group: 'org.powermock', name:'powermock-module-junit4', version: powerMockVersion
     testCompile group: 'org.powermock', name: 'powermock-api-mockito2', version: powerMockVersion
 }

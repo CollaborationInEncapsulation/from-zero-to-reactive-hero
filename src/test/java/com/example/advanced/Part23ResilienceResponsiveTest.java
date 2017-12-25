@@ -2,7 +2,6 @@ package com.example.advanced;
 
 import org.junit.Test;
 import org.mockito.Mockito;
-import org.reactivestreams.Publisher;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
@@ -11,9 +10,9 @@ import java.time.Duration;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletableFuture;
 
-import static com.example.advanced.Part2ResilienceResponsive.*;
+import static com.example.advanced.Part23ResilienceResponsive.*;
 
-public class Part2ResilienceResponsiveTest {
+public class Part23ResilienceResponsiveTest {
 
     @Test
     public void retryOnErrorTest() throws Exception {

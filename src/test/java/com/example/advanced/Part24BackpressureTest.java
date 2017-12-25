@@ -1,23 +1,18 @@
 package com.example.advanced;
 
-import com.example.common.StringEmitter;
 import com.example.common.TestStringEmitter;
 import org.junit.Test;
-import org.reactivestreams.Publisher;
 import reactor.core.publisher.DirectProcessor;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.UnicastProcessor;
 import reactor.test.StepVerifier;
 
 import java.time.Duration;
-import java.util.List;
-import java.util.function.Function;
 
-import static com.example.advanced.Part2Backpressure.backpressureByBatching;
-import static com.example.advanced.Part2Backpressure.dropElementsOnBackpressure;
-import static com.example.advanced.Part2Backpressure.handleBackpressureWithBuffering;
+import static com.example.advanced.Part24Backpressure.backpressureByBatching;
+import static com.example.advanced.Part24Backpressure.dropElementsOnBackpressure;
+import static com.example.advanced.Part24Backpressure.handleBackpressureWithBuffering;
 
-public class Part2BackpressureTest {
+public class Part24BackpressureTest {
 
     @Test
     public void handleBackpressureWithBufferingTest() {

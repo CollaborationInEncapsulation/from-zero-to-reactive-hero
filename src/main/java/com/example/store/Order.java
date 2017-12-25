@@ -16,7 +16,10 @@ public class Order {
     }
 
     public Observable<Long> getTotalPrice() {
-        // TODO: use reduce to find the sum; Use ProductCatalog to find corresponded Product by its id
+        // TODO: use reduce to find the sum;
+        // TODO: Use ProductCatalog#findById to find corresponded Product by its id
+        // HINT: 3 lines of code
+        // HINT: Observable.from + Observable#map + Observable#reduce
         throw new RuntimeException("Not implemented yet");
     }
 

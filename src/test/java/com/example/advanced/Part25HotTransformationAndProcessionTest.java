@@ -4,12 +4,11 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.reactivestreams.Publisher;
 import reactor.core.publisher.*;
-import reactor.core.scheduler.Scheduler;
 import reactor.test.StepVerifier;
 
-import static com.example.advanced.Part2HotTransformationAndProcession.*;
+import static com.example.advanced.Part25HotTransformationAndProcession.*;
 
-public class Part2HotTransformationAndProcessionTest {
+public class Part25HotTransformationAndProcessionTest {
 
     @Test
     public void transformToHotTest() {

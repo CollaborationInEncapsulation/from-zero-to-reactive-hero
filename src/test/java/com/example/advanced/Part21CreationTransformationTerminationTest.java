@@ -12,9 +12,9 @@ import reactor.util.function.Tuples;
 import java.time.Duration;
 import java.util.Arrays;
 
-import static com.example.advanced.Part2CreationTransformationTermination.*;
+import static com.example.advanced.Part21CreationTransformationTermination.*;
 
-public class Part2CreationTransformationTerminationTest {
+public class Part21CreationTransformationTerminationTest {
 
     @Test
     public void mergeSeveralSourcesTest() {
