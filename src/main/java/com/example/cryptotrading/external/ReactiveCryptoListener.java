@@ -18,7 +18,7 @@ import static java.lang.Integer.parseInt;
 class ReactiveCryptoListener {
 
     static Flux<Map<String, Object>> connect(Flux<String> input) {
-        return Flux.create(sink -> {
+        return Flux.defer(() -> Flux.create(sink -> {
             Socket socket;
 
             try {
@@ -51,12 +51,12 @@ class ReactiveCryptoListener {
                             }
                         }
                     })
+                    .on(Socket.EVENT_ERROR, args -> sink.error((Throwable) args[0]))
                     .on(Socket.EVENT_DISCONNECT, args -> sink.complete());
 
             sink.onCancel(socket::close);
-
             socket.connect();
-        }, FluxSink.OverflowStrategy.ERROR);
+        }, FluxSink.OverflowStrategy.ERROR));
     }
 
     @SuppressWarnings("unchecked")

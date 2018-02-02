@@ -258,7 +258,10 @@
                 return event.type === 'AVG';
             })
             .map(function (event) {
-                return event.data;
+                return {
+                    x: new Date(event.timestamp),
+                    y: event.data
+                }
             });
 
 
@@ -267,14 +270,14 @@
                 return event.type === 'PRICE';
             })
             .map(function (event) {
-                return event.data;
+                return {
+                    x: new Date(event.timestamp),
+                    y: event.data
+                }
             });
 
         priceStream.subscribe(function (value) {
-            updatesOverTime.push({
-                x: new Date(),
-                y: value
-            });
+            updatesOverTime.push(value);
             if (updatesOverTime.length > maxNumberOfDataPoints) {
                 updatesOverTime.shift();
             }
@@ -285,10 +288,7 @@
         });
 
         avgStream.subscribe(function (value) {
-            avgsUpdatesOverTime.push({
-                x: new Date(),
-                y: value
-            });
+            avgsUpdatesOverTime.push(value);
 
             if (updatesOverTime.length > maxNumberOfDataPoints) {
                 updatesOverTime.shift();

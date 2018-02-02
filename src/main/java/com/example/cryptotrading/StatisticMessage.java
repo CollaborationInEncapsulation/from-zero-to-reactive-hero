@@ -1,11 +1,15 @@
 package com.example.cryptotrading;
 
+import java.time.Instant;
+
 public class StatisticMessage {
+    private final long timestamp;
     private final float data;
     private final String currency;
     private final StatisticMessage.Type type;
 
     public StatisticMessage(float data, String currency, Type type) {
+        this.timestamp = Instant.now().toEpochMilli();
         this.data = data;
         this.currency = currency;
         this.type = type;
@@ -23,6 +27,10 @@ public class StatisticMessage {
         return this.type;
     }
 
+    public long getTimestamp() {
+        return timestamp;
+    }
+
     public boolean equals(Object o) {
         if (o == this) return true;
         if (!(o instanceof StatisticMessage)) return false;
@@ -34,6 +42,9 @@ public class StatisticMessage {
         final Object this$type = this.getType();
         final Object other$type = other.getType();
         if (this$type == null ? other$type != null : !this$type.equals(other$type)) return false;
+        final Object this$timestamp = this.getTimestamp();
+        final Object other$timestamp = other.getTimestamp();
+        if (!this$timestamp.equals(other$timestamp)) return false;
         return true;
     }
 
@@ -45,11 +56,13 @@ public class StatisticMessage {
         result = result * PRIME + ($currency == null ? 43 : $currency.hashCode());
         final Object $type = this.getType();
         result = result * PRIME + ($type == null ? 43 : $type.hashCode());
+        final Object $timestamp = this.getTimestamp();
+        result = result * PRIME + ($timestamp.hashCode());
         return result;
     }
 
     public String toString() {
-        return "StatisticMessage(data=" + this.getData() + ", currency=" + this.getCurrency() + ", type=" + this.getType() + ")";
+        return "StatisticMessage(data=" + this.getData() + ", currency=" + this.getCurrency() + ", type=" + this.getType() + ", timestamp=" + this.getTimestamp() + ")";
     }
 
     public enum Type {

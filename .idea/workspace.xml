@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7ff8855-b2f0-44f6-8f19-8100293749d0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/StatisticMessage.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/StatisticMessage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/Sum.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/Sum.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/essential/IndexedWord.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/essential/IndexedWord.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/essential/Part1CreationTransformationTermination.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/essential/Part1CreationTransformationTermination.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/store/Order.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/store/Order.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/store/Product.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/store/Product.java" />
+    <list default="true" id="a7ff8855-b2f0-44f6-8f19-8100293749d0" name="Default" comment="provide better hinting for workshop's examples">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advanced/Part21CreationTransformationTermination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advanced/Part21CreationTransformationTermination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advanced/Part22MultithreadingParallelization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advanced/Part22MultithreadingParallelization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/Part3CryptoPlatform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/Part3CryptoPlatform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/StatisticMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/StatisticMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/CryptoConnectionHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/CryptoConnectionHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/StatisticUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/StatisticUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/essential/Part1CreationTransformationTermination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/essential/Part1CreationTransformationTermination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/advanced/Part21CreationTransformationTerminationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/advanced/Part21CreationTransformationTerminationTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -47,36 +51,19 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="crypto-trading-platform" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="crypto-trading-platform" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="crypto-trading-platform" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="io.projectreactor.ipc:reactor-netty:0.7.2.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="crypto-trading-platform" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="crypto-trading-platform" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -87,65 +74,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IndexedWord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/essential/IndexedWord.java">
+      <file leaf-file-name="CryptoConnectionHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/CryptoConnectionHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-212">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
               <folding>
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#340#341#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#1187#1188#0" expanded="true" />
-                <element signature="e#1283#1284#0" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
+                <element signature="e#806#807#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatisticMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/StatisticMessage.java">
+      <file leaf-file-name="Part23ResilienceResponsive.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Part23ResilienceResponsive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-              <folding>
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/Sum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-              <folding>
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#597#598#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1293#1294#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Part2CreationTransformationTermination.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Part2CreationTransformationTermination.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -153,9 +99,48 @@
       <file leaf-file-name="Part1CreationTransformationTermination.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/essential/Part1CreationTransformationTermination.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="495">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Part3CryptoPlatform.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/Part3CryptoPlatform.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3945">
+              <caret line="263" column="17" selection-start-line="263" selection-start-column="17" selection-end-line="263" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpServerRoutes.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor.ipc/reactor-netty/0.7.2.RELEASE/f1c198d8854f612f8cba27bd61c77d61c26e34da/reactor-netty-0.7.2.RELEASE-sources.jar!/reactor/ipc/netty/http/server/HttpServerRoutes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1410">
+              <caret line="129" column="29" selection-start-line="129" selection-start-column="29" selection-end-line="129" selection-end-column="29" />
+              <folding>
+                <element signature="e#4715#4716#0" expanded="true" />
+                <element signature="e#4780#4781#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatisticUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/StatisticUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -163,64 +148,30 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="330">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/store/Product.java">
+      <file leaf-file-name="ReactiveCryptoListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-257">
-              <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            <state relative-caret-position="1395">
+              <caret line="107" column="45" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatisticMessage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/StatisticMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
               <folding>
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#716#717#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/store/Order.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#697#698#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-                <element signature="e#794#795#0" expanded="true" />
-                <element signature="e#842#843#0" expanded="true" />
-                <element signature="e#881#882#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductsCatalog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/store/ProductsCatalog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserActivityUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/store/UserActivityUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -247,6 +198,13 @@
       <find>concat(</find>
       <find>Part2</find>
       <find>.idea</find>
+      <find>error(Th</find>
+      <find>defer(</find>
+      <find>mergeSeq</find>
+      <find>publishOn(</find>
+      <find>compose</find>
+      <find>onNextDropped</find>
+      <find>updatesOverTime</find>
     </findStrings>
     <replaceStrings>
       <replace>),</replace>
@@ -433,8 +391,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4538822629000" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2430925483" />
+        <entry key="$PROJECT_DIR$" value="4542188373000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2186910949" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="566444372" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1710871101" />
       </map>
@@ -599,9 +557,6 @@
         </entry>
       </map>
     </option>
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
     <option name="projectSyncType">
       <map>
         <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
@@ -611,14 +566,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Part2AdvencedCreationTransformationOperators.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Source.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Part2AdvancedCreationTransformation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Part2CreationTransformation.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/advanced/Part2CreationTransformationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/Optional.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/essential/Part1CreationTransformationTerminationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Part2TransfromToHot.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/ReactiveCryptoListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Part3Backpressure.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/common/StringEmitter.java" />
@@ -639,28 +586,36 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Part2CreationTransformationTermination.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/CryptoConnectionHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/JsonUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/IOUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/NettyUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/Part3CryptoPlatform.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/StatisticUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/CryptoConnectionHolder.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/cryptotrading/external/CryptoConnectionHolderTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/cryptotrading/utils/StatisticUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/cryptotrading/utils/StatisticUtilsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/cryptotrading/Part3CryptoPlatformIT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/StatisticUtils.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/essential/Part1CreationTransformationTermination.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/store/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/store/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/essential/IndexedWord.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/StatisticMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/Sum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/store/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Part23ResilienceResponsive.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Part24Backpressure.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Part25HotTransformationAndProcession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Part2Verification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Part26Verification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Part21CreationTransformationTermination.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/advanced/Part21CreationTransformationTerminationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/advanced/Part22MultithreadingParallelization.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/CryptoConnectionHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/StatisticUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/essential/Part1CreationTransformationTermination.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/Part3CryptoPlatform.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/StatisticMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/index.html" />
         <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
@@ -671,28 +626,25 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
+    <navigator proportions="" version="1">
       <hideEmptyPackages ProjectPane="true" />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -733,7 +685,35 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="advanced" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crypto-trading-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crypto-trading-platform" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crypto-trading-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crypto-trading-platform" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="cryptotrading" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crypto-trading-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crypto-trading-platform" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="cryptotrading" type="462c0819:PsiDirectoryNode" />
+              <item name="external" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crypto-trading-platform" type="b2602c69:ProjectViewProjectNode" />
@@ -745,50 +725,26 @@
               <item name="cryptotrading" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="crypto-trading-platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crypto-trading-platform" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="essential" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crypto-trading-platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crypto-trading-platform" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crypto-trading-platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crypto-trading-platform" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="LombokPluginEnabledInProject" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="onNextDropped&#9;PSI&#9;JAVA://reactor.core.publisher.Hooks#onNextDroppedFail&#10;Flux&#9;FILE&#9;jar:///Users/o.dokuka/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/Flux.java&#10;ClientResponse&#9;PSI&#9;JAVA://reactor.ipc.netty.http.client.MonoHttpClientResponse&#10;StepVer&#9;PSI&#9;JAVA://reactor.test.StepVerifier&#10;Observable#defer&#9;PSI&#9;JAVA://rx.Observable&#10;TestOb&#9;PSI&#9;JAVA://rx.observers.TestObserver&#10;Probe&#9;PSI&#9;JAVA://sun.jvm.hotspot.memory.SymbolTable#probe&#10;Scheduler&#9;PSI&#9;JAVA://rx.Scheduler&#10;Observ&#9;PSI&#9;JAVA://rx.Observable&#10;DirectPro&#9;PSI&#9;JAVA://reactor.core.publisher.DirectProcessor&#10;FluxMa&#9;FILE&#9;jar:///Users/o.dokuka/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/FluxMap.java&#10;ObjectEnc&#9;PSI&#9;JAVA://io.netty.handler.codec.serialization.ObjectEncoder" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="full.screen.before.presentation.mode" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="TestOb&#9;PSI&#9;JAVA://rx.observers.TestObserver&#10;Probe&#9;PSI&#9;JAVA://sun.jvm.hotspot.memory.SymbolTable#probe&#10;Scheduler&#9;PSI&#9;JAVA://rx.Scheduler&#10;Observ&#9;PSI&#9;JAVA://rx.Observable&#10;DirectPro&#9;PSI&#9;JAVA://reactor.core.publisher.DirectProcessor&#10;FluxMa&#9;FILE&#9;jar:///Users/o.dokuka/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/FluxMap.java&#10;ObjectEnc&#9;PSI&#9;JAVA://io.netty.handler.codec.serialization.ObjectEncoder" />
-    <property name="LombokPluginEnabledInProject" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -813,54 +769,95 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Part2 Tests">
+  <component name="RunManager" selected="Gradle.crypto-trading-platform [build]">
     <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
     </configuration>
     <configuration name="CryptoPlatformRunner" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <option name="MAIN_CLASS_NAME" value="com.example.cryptotrading.Part3CryptoPlatform" />
+      <module name="crypto-trading-platform_main" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.cryptotrading.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.example.cryptotrading.Part3CryptoPlatform" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
+    </configuration>
+    <configuration name="Part1CreationTransformationTermination" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.essential.Part1CreationTransformationTermination" />
       <module name="crypto-trading-platform_main" />
-      <envs />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.essential.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+    </configuration>
+    <configuration name="crypto-trading-platform [build clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+    </configuration>
+    <configuration name="crypto-trading-platform [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+    </configuration>
+    <configuration name="crypto-trading-platform [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
     </configuration>
     <configuration name="Part1 Tests" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <module name="crypto-trading-platform_test" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.advanced.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="crypto-trading-platform_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.example.essential" />
@@ -870,22 +867,20 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
     <configuration name="Part2 Tests" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <module name="crypto-trading-platform_test" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.advanced.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="crypto-trading-platform_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.example.advanced" />
@@ -895,22 +890,43 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration name="Part3 Tests" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+    <configuration name="Part22MultithreadingParallelizationTest.subscribeOnSingleThreadSchedulerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crypto-trading-platform_test" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.advanced.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.example.advanced" />
+      <option name="MAIN_CLASS_NAME" value="com.example.advanced.Part22MultithreadingParallelizationTest" />
+      <option name="METHOD_NAME" value="subscribeOnSingleThreadSchedulerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Part3 Tests" type="JUnit" factoryName="JUnit">
       <module name="crypto-trading-platform_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.advanced.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.example.cryptotrading" />
@@ -920,17 +936,13 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -940,24 +952,13 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -970,17 +971,21 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
     </configuration>
     <configuration default="true" type="#org.jetbrains.ideagit .devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -988,21 +993,32 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Application.CryptoPlatformRunner" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Part1 Tests" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Part2 Tests" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Part3 Tests" />
+    <list>
+      <item itemvalue="Application.CryptoPlatformRunner" />
+      <item itemvalue="JUnit.Part1 Tests" />
+      <item itemvalue="JUnit.Part2 Tests" />
+      <item itemvalue="JUnit.Part3 Tests" />
+      <item itemvalue="Application.Part1CreationTransformationTermination" />
+      <item itemvalue="JUnit.Part22MultithreadingParallelizationTest.subscribeOnSingleThreadSchedulerTest" />
+      <item itemvalue="Gradle.crypto-trading-platform [build clean]" />
+      <item itemvalue="Gradle.crypto-trading-platform [build]" />
+      <item itemvalue="Gradle.crypto-trading-platform [clean]" />
     </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Gradle.crypto-trading-platform [clean]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.crypto-trading-platform [build]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.crypto-trading-platform [build clean]" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Part1CreationTransformationTermination" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Part22MultithreadingParallelizationTest.subscribeOnSingleThreadSchedulerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1514227300234" />
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
+    <option name="lastUpdateTimestamp" value="1517593077732" />
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",VISIBILITY_SORTER" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -1020,27 +1036,55 @@
       <workItem from="1512407568129" duration="566000" />
       <workItem from="1512806548533" duration="64952000" />
       <workItem from="1513326022227" duration="31892000" />
+      <workItem from="1514361658995" duration="4096000" />
+      <workItem from="1514372437371" duration="681000" />
+      <workItem from="1514384982971" duration="5060000" />
+      <workItem from="1514494807931" duration="833000" />
+      <workItem from="1514889354162" duration="5508000" />
+      <workItem from="1515255694420" duration="7443000" />
+      <workItem from="1516196638986" duration="812000" />
+      <workItem from="1516262224477" duration="645000" />
+      <workItem from="1516264141220" duration="598000" />
+      <workItem from="1517083966786" duration="1890000" />
+      <workItem from="1517146165080" duration="2999000" />
+      <workItem from="1517240438152" duration="3440000" />
+      <workItem from="1517498027190" duration="860000" />
     </task>
+    <task id="LOCAL-00001" summary="remove lombock">
+      <created>1514227362747</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1514227362747</updated>
+    </task>
+    <task id="LOCAL-00002" summary="provide better hinting for workshop's examples">
+      <created>1514239785488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1514239785488</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Part1_Tests - 2017.12.16 at 02h 16m 45s.xml">
-      <configuration name="Part1 Tests" configurationId="JUnit" />
+    <history-entry file="Part1CreationTransformationTerminationTest - 2017.12.26 at 18h 07m 24s.xml">
+      <configuration name="Part1CreationTransformationTerminationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Part2BackpressureTest_backpressureByBatchingTest - 2017.12.15 at 19h 08m 34s.xml">
-      <configuration name="Part2BackpressureTest.backpressureByBatchingTest" configurationId="JUnit" />
+    <history-entry file="Part1CreationTransformationTerminationTest_justABCTest - 2017.12.26 at 16h 41m 09s.xml">
+      <configuration name="Part1CreationTransformationTerminationTest.justABCTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Part2BackpressureTest_backpressureByBatchingTest - 2017.12.15 at 19h 09m 57s.xml">
-      <configuration name="Part2BackpressureTest.backpressureByBatchingTest" configurationId="JUnit" />
+    <history-entry file="Part21CreationTransformationTerminationTest - 2017.12.26 at 19h 27m 18s.xml">
+      <configuration name="Part21CreationTransformationTerminationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Part2BackpressureTest_dropElementsOnBackpressureTest - 2017.12.15 at 18h 57m 23s.xml">
-      <configuration name="Part2BackpressureTest.dropElementsOnBackpressureTest" configurationId="JUnit" />
+    <history-entry file="Part21CreationTransformationTerminationTest - 2017.12.26 at 19h 27m 30s.xml">
+      <configuration name="Part21CreationTransformationTerminationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Part2BackpressureTest_dropElementsOnBackpressureTest - 2017.12.15 at 18h 57m 32s.xml">
-      <configuration name="Part2BackpressureTest.dropElementsOnBackpressureTest" configurationId="JUnit" />
+    <history-entry file="Part22MultithreadingParallelizationTest_subscribeOnSingleThreadSchedulerTest - 2017.12.26 at 19h 43m 22s.xml">
+      <configuration name="Part22MultithreadingParallelizationTest.subscribeOnSingleThreadSchedulerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Part2BackpressureTest_dropElementsOnBackpressureTest - 2017.12.15 at 19h 01m 03s.xml">
-      <configuration name="Part2BackpressureTest.dropElementsOnBackpressureTest" configurationId="JUnit" />
+    <history-entry file="Part22MultithreadingParallelizationTest_subscribeOnSingleThreadSchedulerTest - 2017.12.26 at 19h 43m 35s.xml">
+      <configuration name="Part22MultithreadingParallelizationTest.subscribeOnSingleThreadSchedulerTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Part2BackpressureTest_dropElementsOnBackpressureTest - 2017.12.15 at 19h 02m 16s.xml">
       <configuration name="Part2BackpressureTest.dropElementsOnBackpressureTest" configurationId="JUnit" />
@@ -1056,7 +1100,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123209000" />
+    <option name="totallyTimeSpent" value="179750000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1071,90 +1115,78 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66944444" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4041488" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24821173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info anchor="right" id="Key Promoter X" order="14" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="sbt" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297568" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="R Graphics" order="1" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32889965" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info id="Structure" order="6" sideWeight="0.5009009" side_tool="true" weight="0.23676682" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4050786" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32889965" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info id="Image Layers" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32889965" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32889965" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32889965" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990991" visible="true" weight="0.3304721" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" />
+      <window_info anchor="right" id="R Packages" order="0" />
+      <window_info anchor="right" id="Gradle" order="9" weight="0.3297568" />
+      <window_info anchor="right" id="Theme Preview" order="12" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32769045" />
+      <window_info anchor="right" id="Commander" order="2" weight="0.4" />
+      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="13" weight="0.3297568" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="SciView" order="11" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27010924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18477103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info anchor="right" id="R Packages" order="0" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32889965" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info id="Image Layers" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32889965" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32889965" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Commander" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32769045" />
+      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="13" weight="0.3297568" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Key Promoter X" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32889965" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297568" />
+      <window_info anchor="right" id="Gradle" order="9" weight="0.3297568" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990991" visible="true" weight="0.32618025" />
+      <window_info anchor="right" id="SciView" order="11" />
+      <window_info anchor="right" id="R Graphics" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32889965" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info anchor="right" id="Theme Preview" order="12" />
+      <window_info id="Structure" order="6" sideWeight="0.5009009" side_tool="true" weight="0.23676682" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4050786" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1163,9 +1195,62 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="remove lombock" />
+    <MESSAGE value="provide better hinting for workshop's examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="provide better hinting for workshop's examples" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="29" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/Hooks.java</url>
+          <line>275</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java</url>
+          <line>55</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java</url>
+          <line>56</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java</url>
+          <line>116</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1183,398 +1268,373 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/common.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/common/TestStringEmitter.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/advanced/Part25HotTransformationAndProcessionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/stream/BaseStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/stream/IntStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-test/3.1.2.RELEASE/f0eea25bf88c19c452770b8398eb3a6bba19f226/reactor-test-3.1.2.RELEASE-sources.jar!/reactor/test/DefaultStepVerifierBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="556" column="33" lean-forward="true" selection-start-line="556" selection-start-column="33" selection-end-line="556" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-test/3.1.2.RELEASE/f0eea25bf88c19c452770b8398eb3a6bba19f226/reactor-test-3.1.2.RELEASE-sources.jar!/reactor/test/StepVerifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="182" column="28" lean-forward="false" selection-start-line="182" selection-start-column="28" selection-end-line="182" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/FluxWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-274">
-          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/FluxWindowBoundary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/UnicastProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="55" column="42" lean-forward="false" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+        <state relative-caret-position="260">
+          <caret line="792" column="16" selection-start-line="792" selection-start-column="16" selection-end-line="792" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Source.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/essential/EssentialStoreTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/common/TestStringEmitter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Part2MultithreadingParallelization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Part2HotTransformationAndProcession.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Part24Backpressure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="95" lean-forward="false" selection-start-line="24" selection-start-column="95" selection-end-line="24" selection-end-column="95" />
+        <state relative-caret-position="580">
+          <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Part2Backpressure.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Part25HotTransformationAndProcession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="852">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/FluxOnBackpressureDrop.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Part26Verification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        <state relative-caret-position="728">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor.ipc/reactor-netty/0.7.2.RELEASE/f1c198d8854f612f8cba27bd61c77d61c26e34da/reactor-netty-0.7.2.RELEASE-sources.jar!/reactor/ipc/netty/NettyOutbound.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/essential/FizzBuzzVerifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="339" column="16" lean-forward="false" selection-start-line="339" selection-start-column="16" selection-end-line="339" selection-end-column="16" />
+        <state relative-caret-position="29">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/Flux.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/essential/Part1CreationTransformationTerminationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="7310" column="100" lean-forward="true" selection-start-line="7310" selection-start-column="39" selection-end-line="7310" selection-end-column="100" />
+        <state relative-caret-position="-126">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/util/function/Tuple2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/util/function/Tuples.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Part21CreationTransformationTermination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="97" column="48" lean-forward="true" selection-start-line="97" selection-start-column="48" selection-end-line="97" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/advanced/Part21CreationTransformationTerminationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="203" column="18" lean-forward="true" selection-start-line="203" selection-start-column="18" selection-end-line="203" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/advanced/Part22MultithreadingParallelizationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Part22MultithreadingParallelization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/ReplayProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="100" column="41" lean-forward="false" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="248" column="11" lean-forward="false" selection-start-line="248" selection-start-column="11" selection-end-line="248" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Part2ResilienceResponsive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/cryptotrading/external.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/cryptotrading/external/CryptoConnectionHolderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/cryptotrading/utils/StatisticUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/cryptotrading/Part3CryptoPlatformIT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/store/User.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/CryptoConnectionHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/JsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/Part3CryptoPlatform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="842">
+          <caret line="100" column="41" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/NettyUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/StatisticUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/advanced/Part2BackpressureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/advanced/Part2CreationTransformationTerminationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="219" column="76" lean-forward="false" selection-start-line="219" selection-start-column="76" selection-end-line="219" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/advanced/Part2HotTransformationAndProcessionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="157" column="10" lean-forward="true" selection-start-line="154" selection-start-column="8" selection-end-line="157" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/advanced/Part2MultithreadingParallelizationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="93" column="9" lean-forward="false" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/advanced/Part2ResilienceResponsiveTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-409">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/gradle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="1042" column="59" lean-forward="false" selection-start-line="1042" selection-start-column="59" selection-end-line="1042" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/advanced/Part2Verification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.3.4/828fc0f02c40121bc33aa834e768ab3b16e5ea42/rxjava-1.3.4-sources.jar!/rx/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="2003" column="36" lean-forward="false" selection-start-line="2003" selection-start-column="36" selection-end-line="2003" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/essential/Part1CreationTransformationTermination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/store/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257">
-          <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding>
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/store/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/store/ProductsCatalog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/store/UserActivityUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/StatisticMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding>
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-          </folding>
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/Sum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/MonoIgnoreElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/MonoIgnorePublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/JsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.socket/socket.io-client/1.0.0/4b4143f3dd7f109762c43643b9c306bb33f94f5c/socket.io-client-1.0.0-sources.jar!/io/socket/client/Socket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.17.Final/827fcc22f3b31a9d64a48c8ae608f0af49aaa24c/netty-codec-http-4.1.17.Final-sources.jar!/io/netty/handler/codec/http/HttpResponseStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4650">
+          <caret line="329" column="37" selection-start-line="329" selection-start-column="37" selection-end-line="329" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor.ipc/reactor-netty/0.7.2.RELEASE/f1c198d8854f612f8cba27bd61c77d61c26e34da/reactor-netty-0.7.2.RELEASE-sources.jar!/reactor/ipc/netty/http/server/HttpServerResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2670">
+          <caret line="209" column="45" selection-start-line="209" selection-start-column="45" selection-end-line="209" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/Mono.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11310">
+          <caret line="831" column="72" selection-start-line="831" selection-start-column="72" selection-end-line="831" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor.ipc/reactor-netty/0.7.2.RELEASE/f1c198d8854f612f8cba27bd61c77d61c26e34da/reactor-netty-0.7.2.RELEASE-sources.jar!/reactor/ipc/netty/http/client/MonoHttpClientResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/Flux.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105975">
+          <caret line="7293" column="57" selection-start-line="7292" selection-start-column="7" selection-end-line="7293" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/BlockingSingleSubscriber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor.ipc/reactor-netty/0.7.2.RELEASE/f1c198d8854f612f8cba27bd61c77d61c26e34da/reactor-netty-0.7.2.RELEASE-sources.jar!/reactor/ipc/netty/http/server/DefaultHttpServerRoutes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="82" column="20" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/Operators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3540">
+          <caret line="278" selection-start-line="278" selection-end-line="278" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/Hooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3675">
+          <caret line="275" selection-start-line="275" selection-end-line="275" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/FluxSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.1.2.RELEASE/cd64a7bee9b9665b2028dd57013119d1f049ad56/reactor-core-3.1.2.RELEASE-sources.jar!/reactor/core/publisher/FluxCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="142" column="13" selection-start-line="139" selection-start-column="12" selection-end-line="142" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16425">
+          <caret line="1152" column="15" selection-start-line="1152" selection-start-column="15" selection-end-line="1152" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50520">
+          <caret line="3439" column="37" selection-start-line="3439" selection-start-column="26" selection-end-line="3439" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-all/ac27o8rbd0ic8ih41or9l32mv/gradle-4.0/src/core/org/gradle/api/tasks/AbstractCopyTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2835">
+          <caret line="295" column="28" selection-start-line="295" selection-start-column="28" selection-end-line="295" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor.ipc/reactor-netty/0.7.2.RELEASE/f1c198d8854f612f8cba27bd61c77d61c26e34da/reactor-netty-0.7.2.RELEASE-sources.jar!/reactor/ipc/netty/http/server/HttpServerRoutes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="129" column="29" selection-start-line="129" selection-start-column="29" selection-end-line="129" selection-end-column="29" />
           <folding>
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4780#4781#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Part2CreationTransformationTermination.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/essential/Part1CreationTransformationTermination.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="495">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/CryptoConnectionHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/essential/IndexedWord.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-212">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="1395">
+          <caret line="107" column="45" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/Part3CryptoPlatform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/StatisticUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/StatisticMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
           <folding>
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3945">
+          <caret line="263" column="17" selection-start-line="263" selection-start-column="17" selection-end-line="263" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/advanced/Part23ResilienceResponsive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="330">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
