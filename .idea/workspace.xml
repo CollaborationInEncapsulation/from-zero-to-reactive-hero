@@ -7,12 +7,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advanced/Part21CreationTransformationTermination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advanced/Part21CreationTransformationTermination.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advanced/Part22MultithreadingParallelization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advanced/Part22MultithreadingParallelization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/Part3CryptoPlatform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/Part3CryptoPlatform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/StatisticMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/StatisticMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/CryptoConnectionHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/CryptoConnectionHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/StatisticUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/StatisticUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/essential/Part1CreationTransformationTermination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/essential/Part1CreationTransformationTermination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/advanced/Part21CreationTransformationTerminationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/advanced/Part21CreationTransformationTerminationTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -123,19 +120,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpServerRoutes.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor.ipc/reactor-netty/0.7.2.RELEASE/f1c198d8854f612f8cba27bd61c77d61c26e34da/reactor-netty-0.7.2.RELEASE-sources.jar!/reactor/ipc/netty/http/server/HttpServerRoutes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1410">
-              <caret line="129" column="29" selection-start-line="129" selection-start-column="29" selection-end-line="129" selection-end-column="29" />
-              <folding>
-                <element signature="e#4715#4716#0" expanded="true" />
-                <element signature="e#4780#4781#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StatisticUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/utils/StatisticUtils.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -148,8 +132,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="217">
+              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -157,8 +141,8 @@
       <file leaf-file-name="ReactiveCryptoListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1395">
-              <caret line="107" column="45" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
+            <state relative-caret-position="1380">
+              <caret line="105" column="45" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -391,8 +375,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4542188373000" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2186910949" />
+        <entry key="$PROJECT_DIR$" value="4542189467000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="297149464" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="566444372" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1710871101" />
       </map>
@@ -725,6 +709,10 @@
               <item name="cryptotrading" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="crypto-trading-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -769,7 +757,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.crypto-trading-platform [build]">
+  <component name="RunManager" selected="Application.CryptoPlatformRunner">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -1015,7 +1003,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1517593077732" />
+    <option name="lastUpdateTimestamp" value="1517594139379" />
   </component>
   <component name="StructureViewFactory">
     <option name="ACTIVE_ACTIONS" value=",VISIBILITY_SORTER" />
@@ -1048,7 +1036,7 @@
       <workItem from="1517083966786" duration="1890000" />
       <workItem from="1517146165080" duration="2999000" />
       <workItem from="1517240438152" duration="3440000" />
-      <workItem from="1517498027190" duration="860000" />
+      <workItem from="1517498027190" duration="1711000" />
     </task>
     <task id="LOCAL-00001" summary="remove lombock">
       <created>1514227362747</created>
@@ -1064,7 +1052,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514239785488</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="increase Reactor version to 3.2, fix crypto trade platform challenge">
+      <created>1517593518761</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1517593518762</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1100,7 +1095,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179750000" />
+    <option name="totallyTimeSpent" value="180601000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1123,26 +1118,26 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info anchor="right" id="R Graphics" order="1" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32889965" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32889965" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info id="Structure" order="6" sideWeight="0.5009009" side_tool="true" weight="0.23676682" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4050786" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32889965" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32769045" />
       <window_info anchor="right" id="Palette&#9;" order="10" />
       <window_info id="Image Layers" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32889965" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32889965" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32889965" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32889965" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990991" visible="true" weight="0.3304721" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990991" visible="true" weight="0.3304721" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" />
       <window_info anchor="right" id="R Packages" order="0" />
       <window_info anchor="right" id="Gradle" order="9" weight="0.3297568" />
       <window_info anchor="right" id="Theme Preview" order="12" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32769045" />
       <window_info anchor="right" id="Commander" order="2" weight="0.4" />
       <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="13" weight="0.3297568" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -1198,7 +1193,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="remove lombock" />
     <MESSAGE value="provide better hinting for workshop's examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="provide better hinting for workshop's examples" />
+    <MESSAGE value="increase Reactor version to 3.2, fix crypto trade platform challenge" />
+    <option name="LAST_COMMIT_MESSAGE" value="increase Reactor version to 3.2, fix crypto trade platform challenge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1211,7 +1207,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java</url>
-          <line>55</line>
+          <line>53</line>
           <properties>
             <option name="lambda-ordinal" value="0" />
           </properties>
@@ -1219,7 +1215,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java</url>
-          <line>56</line>
+          <line>54</line>
           <properties>
             <option name="lambda-ordinal" value="0" />
           </properties>
@@ -1227,25 +1223,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java</url>
-          <line>36</line>
+          <line>34</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java</url>
-          <line>44</line>
+          <line>42</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java</url>
-          <line>22</line>
+          <line>21</line>
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java</url>
-          <line>116</line>
+          <line>114</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
@@ -1268,13 +1264,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/advanced/Part25HotTransformationAndProcessionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/stream/BaseStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
@@ -1587,15 +1576,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/external/ReactiveCryptoListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="107" column="45" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/Part3CryptoPlatform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="1380">
+          <caret line="105" column="45" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1631,10 +1613,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cryptotrading/Part3CryptoPlatform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-all/ac27o8rbd0ic8ih41or9l32mv/gradle-4.0/src/core/org/gradle/api/artifacts/dsl/DependencyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2494">
+          <caret selection-end-line="15" />
+          <folding>
+            <element signature="e#0#15258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="217">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
         </state>
       </provider>
     </entry>
