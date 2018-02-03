@@ -3,7 +3,6 @@ package com.example.cryptotrading.utils;
 import org.junit.Test;
 
 public class StatisticUtilsTest {
-
     //FIXME consider to verify all corner cases
 
     @Test

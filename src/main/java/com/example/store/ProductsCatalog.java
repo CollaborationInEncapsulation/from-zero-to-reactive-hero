@@ -1,12 +1,18 @@
 package com.example.store;
 
+import lombok.experimental.FieldDefaults;
+
+import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+import static lombok.AccessLevel.PRIVATE;
+
+@FieldDefaults(level = PRIVATE, makeFinal = true)
 public class ProductsCatalog {
-    private static Random random = new Random();
-    private static List<String> PRODUCTS_NAMES = Arrays.asList(
+    static Random random = new SecureRandom();
+    static List<String> PRODUCTS_NAMES = Arrays.asList(
             "Phone",
             "TV",
             "SonyPlayStation",
