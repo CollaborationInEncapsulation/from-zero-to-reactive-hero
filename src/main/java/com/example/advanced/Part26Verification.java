@@ -25,11 +25,9 @@ public class Part26Verification {
 
     @Test
     public void verifyEmissionWithVirtualTimeScheduler() {
-        Supplier<Flux<Long>> toVerify = () -> {
-            return Flux.interval(Duration.ofDays(1))
-                    .take(15)
-                    .skip(5);
-        };
+        Supplier<Flux<Long>> toVerify = () -> Flux.interval(Duration.ofDays(1))
+                .take(15)
+                .skip(5);
 
         //TODO: use StepVerifier to perform testing
         // HINT: use StepVerifier.withVirtualTime(..)
