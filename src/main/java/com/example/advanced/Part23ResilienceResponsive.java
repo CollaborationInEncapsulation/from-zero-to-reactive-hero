@@ -32,12 +32,14 @@ public class Part23ResilienceResponsive {
 
     public static Publisher<String> fallbackHelloOnError(Flux<String> failurePublisher) {
         // TODO: return fallback on error
+        // TODO: in case of error return fallback with "Hello"
         // HINT: Flux#onErrorResume or Flux#onErrorReturn
         throw new RuntimeException("Not implemented yet");
     }
 
     public static Publisher<String> fallbackHelloOnEmpty(Flux<String> emptyPublisher) {
         // TODO: return fallback on empty source
+        // TODO: in case of no value emitted return fallback with "Hello"
         // HINT: Flux#switchIfEmpty() or Flux#defaultIfEmpty
         throw new RuntimeException("Not implemented yet");
     }

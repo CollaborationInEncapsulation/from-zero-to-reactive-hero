@@ -3,10 +3,7 @@ package com.example.cryptotrading.utils;
 import com.example.cryptotrading.StatisticMessage;
 import reactor.core.publisher.Flux;
 
-import java.time.Duration;
-import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Function;
 
 public class StatisticUtils {
     private static final String PRICE_KEY = "PRICE";
@@ -15,7 +12,17 @@ public class StatisticUtils {
     public static Flux<StatisticMessage> transform(Flux<Map<String, Object>> input,
                                                    Flux<Long> averagesTimeInterval) {
         throw new RuntimeException("Not implemented yet");
-//                Flux.merge(
+
+
+        // 1) JUST FOR WARM UP: .map() incoming Map<String, Object> to StatisticMessage. For that purpose use StatisticMessage.price()
+        //    NOTE: Incoming Map<String, Object> contains keys PRICE_KEY and CURRENCY_KEY
+        //    NOTE: PRICE_KEY is already float type, so you need just cast its value: (float) map.get(PRICE_KEY)
+
+//        return Flux.merge(
+
+
+                // --------------------------------------------------------------------------------------------------
+
                 // 1.1)   TODO Collect crypto currency price during the interval of seconds
                 //        HINT consider corner case when client did not send any info about interval (add initial interval (mergeWith(...)))
                 //        HINT use window + switchMap

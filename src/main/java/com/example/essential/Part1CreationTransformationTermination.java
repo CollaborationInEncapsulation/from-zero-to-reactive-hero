@@ -67,6 +67,30 @@ public class Part1CreationTransformationTermination {
     }
 
     public static Observable<String> adaptToObservable(StringEmitter emitter) {
+        // TODO: when subscriber of the returned Observable<String> has subscribed,
+        //       they should receive data emitted from the StringEmitter
+
+        // NOTE: StringEmitter is a simple data source to which we may subscribe in the plain java in the next way:
+        //
+        //       emitter.onString(new Consumer<String>() {
+        //           @Override
+        //           public void accept(String s) {
+        //               System.out.println(s);
+        //           }
+        //       });
+
+        // NOTE: When you use Observable.unsafeCreate the parameter is also function which looks like next:
+        //
+        //        Observable.unsafeCreate(new Observable.OnSubscribe<String>() {
+        //            @Override
+        //            public void call(Subscriber<? super String> subscriber) {
+        //
+        //            }
+        //        });
+
+        // NOTE: As we learned earlier, Subscriber has method onNext which should be called every time
+        //       emitter.onString(new Consumer<String>()... emits new value
+
         // TODO: adapt to Observable; consider Observable#unsafeCreate
         // HINT: combine emitter.onString( with OnSubscribe::onNext )
         throw new RuntimeException("Not implemented yet");
@@ -105,6 +129,7 @@ public class Part1CreationTransformationTermination {
      * * For multiples of three map to “Fizz” instead of the number.
      * * For the multiples of five map to “Buzz”.
      * * For numbers which are multiples of both three and five map to “FizzBuzz”.
+     * * For the case when non of above statements are true return string representation of a number
      *
      * @param input Input of numbers from 1 to 100
      * @return Observable with mapped numbers
