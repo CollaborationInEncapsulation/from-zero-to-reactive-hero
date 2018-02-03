@@ -1,6 +1,5 @@
 out
 .idea
-!.idea/workspace.xml
 .gradle
 *.iml
 *.class
