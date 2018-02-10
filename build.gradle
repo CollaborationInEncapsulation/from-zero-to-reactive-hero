@@ -21,6 +21,7 @@ ext {
     reactorNettyVersion = '0.7.4.BUILD-SNAPSHOT'
     rxJava1Version = '1.3.4'
     powerMockVersion = '1.7.3'
+    guavaVersion = '24.0-jre'
 }
 
 dependencies {
@@ -34,6 +35,7 @@ dependencies {
 
     testCompile group: 'org.powermock', name:'powermock-module-junit4', version: powerMockVersion
     testCompile group: 'org.powermock', name: 'powermock-api-mockito2', version: powerMockVersion
+    testCompile group: 'com.google.guava', name: 'guava', version: guavaVersion
 }
 
 
