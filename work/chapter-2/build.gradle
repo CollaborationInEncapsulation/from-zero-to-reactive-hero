@@ -1,0 +1,28 @@
+group 'com.example'
+version '0.0.1-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
+}
+
+dependencies {
+    compile project(":plugin")
+
+    compile group: 'io.socket', name: 'socket.io-client', version: socketioVersion
+    compile group: 'io.projectreactor.ipc', name: 'reactor-netty', version: reactorNettyVersion
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonVersion
+
+    compile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'io.projectreactor', name: 'reactor-test', version: reactorVersion
+
+    testCompile group: 'org.powermock', name:'powermock-module-junit4', version: powerMockVersion
+    testCompile group: 'org.powermock', name: 'powermock-api-mockito2', version: powerMockVersion
+    testCompile group: 'com.google.guava', name: 'guava', version: guavaVersion
+}

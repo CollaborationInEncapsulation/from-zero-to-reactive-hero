@@ -1,2 +1,4 @@
 rootProject.name = 'crypto-trading-platform'
-
+include "plugin"
+include "work/chapter-1"
+include "work/chapter-2"
