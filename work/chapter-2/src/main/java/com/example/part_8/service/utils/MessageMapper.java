@@ -1,5 +1,6 @@
 package com.example.part_8.service.utils;
 
+import com.example.part_8.domain.Trade;
 import com.example.part_8.dto.MessageDTO;
 
 import java.util.Map;
@@ -29,6 +30,18 @@ public class MessageMapper {
                 (String) event.get(CURRENCY_KEY),
                 (String) event.get(MARKET_KEY)
         );
+    }
+
+    public static Trade mapToDomainTrade(MessageDTO<MessageDTO.Trade> tradeMessageDTO) {
+        Trade trade = new Trade();
+
+        trade.setPrice(tradeMessageDTO.getData().getPrice());
+        trade.setAmount(tradeMessageDTO.getData().getAmount());
+        trade.setCurrency(tradeMessageDTO.getCurrency());
+        trade.setMarket(tradeMessageDTO.getMarket());
+        trade.setTimestamp(tradeMessageDTO.getTimestamp());
+
+        return trade;
     }
 
     public static boolean isPriceMessageType(Map<String, Object> event) {
