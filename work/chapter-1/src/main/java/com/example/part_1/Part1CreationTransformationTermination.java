@@ -100,12 +100,41 @@ public class Part1CreationTransformationTermination {
     @Complexity(MEDIUM)
     public static Observable<Character> flatMapWordsToCharacters(Observable<String> input) {
         // TODO: flat map strings to character
-        // HINT: to split string on characters use string.split("")
+        // HINT: to split string on characters use string.split("") -> "ABC" -> [ String("A"), String("B"), String("C") ]
         // HINT: remind how to wrap array to Observable
         // HINT: consider string.charAt(0) for mapping one letter string to character
+        // HINT: String("A").charAt(0) -> Char('A')
 
         throw new RuntimeException("Not implemented");
     }
+    /*
+     *           ^
+     *          /|\
+     *         / | \
+     *        /  |  \
+     *       /   |   \
+     *           |
+     *           |
+     *           |
+     *           |
+     *
+     * HINT: Imperative example
+     * List<Character> list = new ArraysList<>();
+     *
+     * for (String word: input) {
+     *    String[] letters = word.split("");
+     *    for (String latter: letters) {
+     *         list.add(latter.charAt(0));
+     *    }
+     * }
+     *
+     *
+     *
+     *
+     *
+     *
+     */
+
 
     @Complexity(HARD)
     public static Observable<String> adaptToObservable(StringEventPublisher eventPublisher) {

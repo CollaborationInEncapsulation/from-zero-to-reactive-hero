@@ -5,6 +5,6 @@ public @interface Complexity {
     Level value();
 
     enum Level {
-        EASY, MEDIUM, HARD
+        EASY, MEDIUM, HARD, HARDCORE
     }
 }

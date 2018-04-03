@@ -1,9 +1,8 @@
-package com.example.part_7;
+package com.example.part_8;
 
 import com.example.annotations.Complexity;
 import org.junit.Test;
 import reactor.core.publisher.Flux;
-import reactor.test.StepVerifier;
 
 import java.time.Duration;
 import java.util.Random;
@@ -12,7 +11,7 @@ import java.util.function.Supplier;
 import static com.example.annotations.Complexity.Level.HARD;
 import static com.example.annotations.Complexity.Level.MEDIUM;
 
-public class Part7Verification {
+public class Part8Verification {
 
     @Complexity(MEDIUM)
     @Test
