@@ -23,17 +23,24 @@ public class Injector {
 	@Complexity(MEDIUM)
 	public static <T> Mono<T> inject(Class<T> source) {
 		// TODO: retrieve Map from the context and in case of missed instance create it
+		// TODO: return error stream in case if map is missed in the context
 		//       using Injector.instantiate(source) method
 		throw new RuntimeException("Not implemented");
 	}
 
 	@Complexity(EASY)
 	public static <T> Mono<T> withInjector(Mono<T> in) {
+		// TODO: provide Reactor Context with {HOLDER_KEY : ConcurrentHashMap}
+		// TODO: provide additional checking to ensure that values was not erased
+
 		return in;
 	}
 
 	@Complexity(EASY)
 	public static <T> Flux<T> withInjector(Flux<T> in) {
+		// TODO: provide Reactor Context with {HOLDER_KEY : ConcurrentHashMap}
+		// TODO: provide additional checking to ensure that values was not erased
+
 		return in;
 	}
 

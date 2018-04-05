@@ -1,12 +1,10 @@
-package com.example.part_4;
+package com.example.part_5;
 
 import com.example.annotations.Complexity;
 import org.reactivestreams.Publisher;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import reactor.core.scheduler.Schedulers;
 
-import java.time.Duration;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletableFuture;
 
@@ -14,7 +12,7 @@ import static com.example.annotations.Complexity.Level.EASY;
 import static com.example.annotations.Complexity.Level.HARD;
 import static com.example.annotations.Complexity.Level.MEDIUM;
 
-public class Part4ResilienceResponsive {
+public class Part5ResilienceResponsive {
 
     @Complexity(EASY)
     public static Publisher<String> fallbackHelloOnEmpty(Flux<String> emptyPublisher) {

@@ -1,4 +1,4 @@
-package com.example.part_4;
+package com.example.part_5;
 
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -10,9 +10,9 @@ import java.time.Duration;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletableFuture;
 
-import static com.example.part_4.Part4ResilienceResponsive.*;
+import static com.example.part_5.Part5ResilienceResponsive.*;
 
-public class Part4ResilienceResponsiveTest {
+public class Part5ResilienceResponsiveTest {
 
     @Test
     public void retryOnErrorTest() throws Exception {

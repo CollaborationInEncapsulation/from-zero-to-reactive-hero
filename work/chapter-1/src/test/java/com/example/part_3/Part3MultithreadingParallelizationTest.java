@@ -34,6 +34,7 @@ public class Part3MultithreadingParallelizationTest {
         Thread[] threads = new Thread[1];
         StepVerifier
                 .create(subscribeOnSingleThreadScheduler(() -> {
+                    System.out.println("Threads:" + Thread.currentThread().getName());
                     threads[0] = Thread.currentThread();
                     return "Hello";
                 }))

@@ -44,7 +44,7 @@ public class Part7ContextTest {
 
 		StepVerifier.create(flux)
 		            .expectSubscription()
-		            .expectAccessibleContext().hasKey("a").hasKey("b").then()
+		            .expectAccessibleContext().hasKey("b").then()
 		            .expectNext("a")
 		            .expectNext("b")
 		            .verifyComplete();

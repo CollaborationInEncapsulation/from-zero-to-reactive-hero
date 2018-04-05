@@ -87,13 +87,9 @@ public class Part2CreationTransformationTermination {
         // HINT: Use Flux#cast to cast Tuple2 --> Tuple3
         // HINT: Use "" + Tuple3.getT1 ... getT2 ... getT3
 
-        //
-        //
-        //
-        //        return Flux.combineLatest(
-        //                args -> "" + args[0] + args[1] + args[2],
-        //                prefix, word, suffix
-        //        );
+		//
+		//
+		//
 
         throw new RuntimeException("Not implemented");
     }

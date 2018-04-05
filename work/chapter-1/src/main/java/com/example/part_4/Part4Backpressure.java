@@ -1,10 +1,9 @@
-package com.example.part_5;
+package com.example.part_4;
 
 import com.example.annotations.Complexity;
 import com.example.common.StringEventPublisher;
 import org.reactivestreams.Publisher;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.FluxSink;
 
 import java.time.Duration;
 import java.util.List;
@@ -12,7 +11,7 @@ import java.util.List;
 import static com.example.annotations.Complexity.Level.EASY;
 import static com.example.annotations.Complexity.Level.MEDIUM;
 
-public class Part5Backpressure {
+public class Part4Backpressure {
 
     @Complexity(EASY)
     public static Flux<String> dropElementsOnBackpressure(Flux<String> upstream) {

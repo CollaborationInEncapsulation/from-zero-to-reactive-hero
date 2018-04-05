@@ -20,10 +20,6 @@ public class Part8Verification {
                 .take(15)
                 .skip(5);
         //TODO: use StepVerifier to perform testing
-        // HINT: use StepVerifier.create(..)
-        // HINT: use .expectSubscription as the first verification step
-        // HINT: use .expectNextCount to verify that publisher has emitted 10 elements
-        // HINT: use .expectComplete() + .verify() or .verifyComplete()
 
         throw new RuntimeException("Not implemented");
     }
@@ -36,11 +32,6 @@ public class Part8Verification {
                 .skip(5);
 
         //TODO: use StepVerifier to perform testing
-        // HINT: use StepVerifier.withVirtualTime(..)
-        // HINT: use .expectSubscription as the first verification step
-        // HINT: use .thenAwait(Duration.ofDays(15)) to advance time by specified duration
-        // HINT: use .expectNextCount to verify that publisher has emitted 10 elements
-        // HINT: use .expectComplete() + .verify() or .verifyComplete()
 
         throw new RuntimeException("Not implemented");
     }

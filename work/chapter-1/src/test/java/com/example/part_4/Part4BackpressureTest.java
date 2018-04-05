@@ -1,4 +1,4 @@
-package com.example.part_5;
+package com.example.part_4;
 
 import com.example.common.TestStringEventPublisher;
 import org.junit.Test;
@@ -8,11 +8,11 @@ import reactor.test.StepVerifier;
 
 import java.time.Duration;
 
-import static com.example.part_5.Part5Backpressure.backpressureByBatching;
-import static com.example.part_5.Part5Backpressure.dropElementsOnBackpressure;
-import static com.example.part_5.Part5Backpressure.handleBackpressureWithBuffering;
+import static com.example.part_4.Part4Backpressure.backpressureByBatching;
+import static com.example.part_4.Part4Backpressure.dropElementsOnBackpressure;
+import static com.example.part_4.Part4Backpressure.handleBackpressureWithBuffering;
 
-public class Part5BackpressureTest {
+public class Part4BackpressureTest {
 
     @Test
     public void handleBackpressureWithBufferingTest() {
