@@ -35,31 +35,27 @@ public class PriceService {
 
     // Visible for testing
     Flux<Map<String, Object>> selectOnlyPriceUpdateEvents(Flux<Map<String, Object>> input) {
-        // return Flux.never();
+    	// TODO: filter only Price messages
+	    // TODO: verify that price message are valid
+	    // HINT: take a look at helper MessageMapper
 
-        return input
-                .filter(MessageMapper::isPriceMessageType)
-                .filter(MessageMapper::isValidPriceMessage);
+        return Flux.never();
     }
 
     // Visible for testing
     Flux<MessageDTO<Float>> currentPrice(Flux<Map<String, Object>> input) {
+    	// TODO map to Statistic message using MessageMapper.mapToPriceMessage
+
         return Flux.never();
     }
 
     // 1.1)   TODO Collect crypto currency price during the interval of seconds
-    //        HINT consider corner case when client did not send any info about interval (add initial interval (mergeWith(...)))
+    //        HINT consider corner case when a client did not send any info about interval (add initial interval (mergeWith(...)))
     //        HINT use window + switchMap
-    // 1.2)   TODO group collected Maps result by currency
-    //        HINT to get currency name from the Map use CURRENCY_KEY constant
+    // 1.2)   TODO group collected MessageDTO results by currency
     //        HINT for reduce consider to reuse Sum.empty and Sum#add
-    // 1.3.1) TODO Filter grouped stream on map without price info
-    // 1.3.2) TODO Grouped filtered stream reduce calculate average
+    // 1.3.2) TODO calculate average for reduced Sum object using Sun#avg
     // 1.3.3) TODO map to Statistic message using MessageDTO#avg()
-
-    // 2.1)   TODO hold latest event with currency price to send latest price if new incoming event does not include price info
-    //        HINT use .scan() + HashMap + .filter to ensure that after proper scan passed map include Price
-    // 2.2)   TODO map to Statistic message using MessageDTO#price()
 
     // Visible for testing
     // TODO: Remove as should be implemented by trainees

@@ -48,7 +48,8 @@ public class Part8CryptoPlatform extends LoggerConfigurationTrait {
             TradeService tradeService,
             StorageService storageService) {
         return (req, res) ->
-                externalSystemDataStream.listenForExternalEvents()
+                externalSystemDataStream
+		                .listenForExternalEvents()
                         .transform(tradingDataStream -> {
                             Flux<Long> priceAverageIntervalCommands = NettyUtils
                                     .prepareInput(req)

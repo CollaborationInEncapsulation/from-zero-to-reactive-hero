@@ -2,7 +2,11 @@ package com.example.part_8.service.utils;
 
 import com.example.part_8.domain.Trade;
 import com.example.part_8.dto.MessageDTO;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.bson.Document;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class MessageMapper {
@@ -32,7 +36,7 @@ public class MessageMapper {
         );
     }
 
-    public static Trade mapToDomainTrade(MessageDTO<MessageDTO.Trade> tradeMessageDTO) {
+    public static Document mapToMongoDocument(MessageDTO<MessageDTO.Trade> tradeMessageDTO) {
         Trade trade = new Trade();
 
         trade.setPrice(tradeMessageDTO.getData().getPrice());
@@ -41,7 +45,10 @@ public class MessageMapper {
         trade.setMarket(tradeMessageDTO.getMarket());
         trade.setTimestamp(tradeMessageDTO.getTimestamp());
 
-        return trade;
+        return new Document(
+            new ObjectMapper()
+                    .convertValue(trade, new TypeReference<HashMap<String, Object>>() {})
+        );
     }
 
     public static boolean isPriceMessageType(Map<String, Object> event) {
