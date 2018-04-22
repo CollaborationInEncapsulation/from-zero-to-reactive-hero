@@ -4,6 +4,8 @@ import java.util.concurrent.CountDownLatch;
 
 import com.example.annotations.Complexity;
 import com.example.annotations.Optional;
+import com.example.common.StringEventPublisher;
+import org.reactivestreams.Publisher;
 import org.reactivestreams.Subscription;
 import reactor.core.publisher.BaseSubscriber;
 import reactor.core.publisher.Flux;
@@ -11,6 +13,13 @@ import reactor.core.publisher.Flux;
 import static com.example.annotations.Complexity.Level.MEDIUM;
 
 public class Part4ExtraBackpressure_Optional {
+
+	@Complexity(MEDIUM)
+	public static Publisher<String> handleBackpressureWithBuffering(StringEventPublisher stringEventPublisher) {
+		// TODO: adapt non-Reactor api and apply backpressure strategy
+		// HINT: Flux.create or Flux.push
+		throw new RuntimeException("Not implemented");
+	}
 
 	@Optional
 	@Complexity(MEDIUM)

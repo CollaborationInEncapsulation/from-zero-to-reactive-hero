@@ -1,6 +1,9 @@
 package com.example.part_1;
 
-import com.example.common.TestStringEventPublisher;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
+
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -17,10 +20,6 @@ import rx.functions.Func0;
 import rx.observers.AssertableSubscriber;
 import rx.plugins.RxJavaHooks;
 import rx.schedulers.TestScheduler;
-
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 
 import static com.example.part_1.Part1CreationTransformationTermination.*;
 import static org.mockito.ArgumentMatchers.anyInt;
@@ -132,24 +131,6 @@ public class Part1CreationTransformationTerminationTest {
                 .assertValueCount(6)
                 .assertNotCompleted()
                 .awaitTerminalEventAndUnsubscribeOnTimeout(1, TimeUnit.MILLISECONDS);
-    }
-
-    @Test
-    public void adaptToObservableTest() {
-        TestStringEventPublisher emitter = new TestStringEventPublisher();
-
-        adaptToObservable(emitter)
-                .test()
-                .assertNoValues()
-                .perform(() -> emitter.consumer.accept("1"))
-                .assertValue("1")
-                .perform(() -> emitter.consumer.accept("2"))
-                .assertValues("1", "2")
-                .perform(() -> emitter.consumer.accept("3"))
-                .assertValues("1", "2", "3")
-                .assertNotCompleted()
-                .awaitTerminalEventAndUnsubscribeOnTimeout(1, TimeUnit.MILLISECONDS)
-                .assertUnsubscribed();
     }
 
     @Test
