@@ -1,7 +1,6 @@
 package com.example.part_1;
 
 import com.example.annotations.Complexity;
-import com.example.common.StringEventPublisher;
 import reactor.util.annotation.Nullable;
 import rx.Observable;
 import rx.functions.Func0;
@@ -12,7 +11,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static com.example.annotations.Complexity.Level.EASY;
-import static com.example.annotations.Complexity.Level.HARD;
 import static com.example.annotations.Complexity.Level.MEDIUM;
 
 public class Part1CreationTransformationTermination {
@@ -134,37 +132,4 @@ public class Part1CreationTransformationTermination {
      *
      *
      */
-
-
-    @Complexity(HARD)
-    public static Observable<String> adaptToObservable(StringEventPublisher eventPublisher) {
-        // TODO: when subscriber of the returned Observable<String> has subscribed,
-        //       they should receive data emitted from the StringEventPublisher
-
-        // NOTE: StringEventPublisher is a simple data source to which we may subscribe in the plain java in the next way:
-        //
-        //       eventPublisher.registerEventListener(new Consumer<String>() {
-        //           @Override
-        //           public void accept(String s) {
-        //               System.out.println(s);
-        //           }
-        //       });
-
-        // NOTE: When you use Observable.unsafeCreate the parameter is also function which looks like next:
-        //
-        //        Observable.unsafeCreate(new Observable.OnSubscribe<String>() {
-        //            @Override
-        //            public void call(Subscriber<? super String> subscriber) {
-        //
-        //            }
-        //        });
-
-        // NOTE: As we learned earlier, Subscriber has method onNext which should be called every time
-        //       eventPublisher.registerEventListener(new Consumer<String>()... emits new value
-
-        // TODO: adapt to Observable; consider Observable#unsafeCreate
-        // HINT: combine eventPublisher.registerEventListener( with OnSubscribe::onNext )
-
-        throw new RuntimeException("Not implemented");
-    }
 }

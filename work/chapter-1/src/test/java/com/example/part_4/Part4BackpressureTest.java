@@ -1,40 +1,16 @@
 package com.example.part_4;
 
-import com.example.common.TestStringEventPublisher;
+import java.time.Duration;
+
 import org.junit.Test;
 import reactor.core.publisher.DirectProcessor;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
-import java.time.Duration;
-
 import static com.example.part_4.Part4Backpressure.backpressureByBatching;
 import static com.example.part_4.Part4Backpressure.dropElementsOnBackpressure;
-import static com.example.part_4.Part4Backpressure.handleBackpressureWithBuffering;
 
 public class Part4BackpressureTest {
-
-    @Test
-    public void handleBackpressureWithBufferingTest() {
-        TestStringEventPublisher stringEmitter = new TestStringEventPublisher();
-        StepVerifier
-                .create(
-                        handleBackpressureWithBuffering(stringEmitter),
-                        0
-                )
-                .expectSubscription()
-                .then(() -> stringEmitter.consumer.accept("A"))
-                .then(() -> stringEmitter.consumer.accept("B"))
-                .then(() -> stringEmitter.consumer.accept("C"))
-                .then(() -> stringEmitter.consumer.accept("D"))
-                .then(() -> stringEmitter.consumer.accept("E"))
-                .then(() -> stringEmitter.consumer.accept("F"))
-                .expectNoEvent(Duration.ofMillis(300))
-                .thenRequest(6)
-                .expectNext("A", "B", "C", "D", "E", "F")
-                .thenCancel()
-                .verify();
-    }
 
     @Test
     public void dropElementsOnBackpressureTest() {

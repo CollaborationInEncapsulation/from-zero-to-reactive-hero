@@ -1,5 +1,8 @@
 package com.example.part_1;
 
+import java.util.concurrent.TimeUnit;
+
+import com.example.common.TestStringEventPublisher;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,10 +13,7 @@ import rx.Observable;
 import rx.plugins.RxJavaHooks;
 import rx.schedulers.TestScheduler;
 
-import java.util.concurrent.TimeUnit;
-
-import static com.example.part_1.Part1ExtraExercises_Optional.fizzBuzz;
-import static com.example.part_1.Part1ExtraExercises_Optional.flattenObservablesOrdered;
+import static com.example.part_1.Part1ExtraExercises_Optional.*;
 
 @RunWith(PowerMockRunner.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -44,5 +44,24 @@ public class Part1ExtraExercises {
         fizzBuzz(Observable.range(1, 100))
                 .zipWith(Observable.range(1, 100), (word, index) -> new IndexedWord(index, word))
                 .subscribe(new FizzBuzzVerifier());
+    }
+
+
+    @Test
+    public void adaptToObservableTest() {
+        TestStringEventPublisher emitter = new TestStringEventPublisher();
+
+        adaptToObservable(emitter)
+                .test()
+                .assertNoValues()
+                .perform(() -> emitter.consumer.accept("1"))
+                .assertValue("1")
+                .perform(() -> emitter.consumer.accept("2"))
+                .assertValues("1", "2")
+                .perform(() -> emitter.consumer.accept("3"))
+                .assertValues("1", "2", "3")
+                .assertNotCompleted()
+                .awaitTerminalEventAndUnsubscribeOnTimeout(1, TimeUnit.MILLISECONDS)
+                .assertUnsubscribed();
     }
 }

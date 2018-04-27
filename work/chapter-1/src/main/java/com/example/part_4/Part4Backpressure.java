@@ -28,11 +28,4 @@ public class Part4Backpressure {
 
         throw new RuntimeException("Not implemented");
     }
-
-    @Complexity(MEDIUM)
-    public static Publisher<String> handleBackpressureWithBuffering(StringEventPublisher stringEventPublisher) {
-        // TODO: adapt non-Reactor api and apply backpressure strategy
-        // HINT: Flux.create or Flux.push
-        throw new RuntimeException("Not implemented");
-    }
 }
