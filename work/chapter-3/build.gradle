@@ -29,6 +29,9 @@ repositories {
 
 
 dependencies {
+
+  	compile("io.projectreactor:reactor-core:$reactorVersion")
+    compile("io.socket:socket.io-client:$socketioVersion")
     compile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('org.springframework.boot:spring-boot-starter-data-mongodb-reactive')
