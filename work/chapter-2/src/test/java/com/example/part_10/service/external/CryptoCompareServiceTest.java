@@ -1,4 +1,4 @@
-package com.example.part_10.external;
+package com.example.part_10.service.external;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -17,8 +17,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @RunWith(PowerMockRunner.class)
 // HINT use PowerMock to mock static method behaviour and verify in integrity
-@PrepareForTest(ReactiveCryptoListener.class)
-public class CryptoConnectionHolderTest {
+@PrepareForTest(CryptoCompareClient.class)
+public class CryptoCompareServiceTest {
 
     @Test
     public void verifyThatSupportMultiSubscribers() {
@@ -27,7 +27,7 @@ public class CryptoConnectionHolderTest {
                 .create()
                 .doOnSubscribe(s -> subscribtions.incrementAndGet());
 
-        Flux<Object> cachedFlux = CryptoConnectionHolder.provideCaching(source);
+        Flux<Object> cachedFlux = CryptoCompareService.provideCaching(source);
 
         cachedFlux.subscribe(System.out::println);
         cachedFlux.subscribe(System.out::println);
@@ -41,8 +41,8 @@ public class CryptoConnectionHolderTest {
                 .mergeWith(Flux.error(new RuntimeException())));
 
         StepVerifier.withVirtualTime(() ->
-                CryptoConnectionHolder.provideResilience(source)
-                .take(6)
+                CryptoCompareService.provideResilience(source)
+                                    .take(6)
         )
                 .expectSubscription()
                 .thenAwait(Duration.ofDays(10))
@@ -59,7 +59,7 @@ public class CryptoConnectionHolderTest {
         ReplayProcessor<String> consumer1 = ReplayProcessor.create(10);
         ReplayProcessor<String> consumer2 = ReplayProcessor.create(10);
 
-        Publisher<String> publisher = CryptoConnectionHolder.provideCaching(source);
+        Publisher<String> publisher = CryptoCompareService.provideCaching(source);
 
         source.onNext("A");
         source.onNext("B");

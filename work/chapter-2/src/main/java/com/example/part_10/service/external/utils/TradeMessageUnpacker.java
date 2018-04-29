@@ -1,4 +1,4 @@
-package com.example.part_10.external.utils;
+package com.example.part_10.service.external.utils;
 
 import reactor.util.function.Tuple2;
 import reactor.util.function.Tuples;

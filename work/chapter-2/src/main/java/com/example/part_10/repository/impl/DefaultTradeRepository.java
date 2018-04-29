@@ -1,8 +1,10 @@
-package com.example.part_10.service;
+package com.example.part_10.repository.impl;
 
 import java.util.List;
 
+import com.example.part_10.domain.Trade;
 import com.example.part_10.dto.MessageDTO;
+import com.example.part_10.repository.TradeRepository;
 import com.mongodb.reactivestreams.client.MongoClient;
 import com.mongodb.reactivestreams.client.MongoClients;
 import com.mongodb.reactivestreams.client.MongoCollection;
@@ -11,31 +13,31 @@ import org.bson.Document;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-public class StorageService {
+public class DefaultTradeRepository implements TradeRepository {
 
 	private static final String DB_NAME         = "crypto";
 	private static final String COLLECTION_NAME = "trades";
 
 	private final MongoCollection<Document> collection;
 
-	public StorageService() {
+	public DefaultTradeRepository() {
 		MongoClient client = MongoClients.create();
 
 		collection = client.getDatabase(DB_NAME)
 		                   .getCollection(COLLECTION_NAME);
 	}
 
-	public Flux<MessageDTO> storeTrades(Flux<MessageDTO> trades) {
+	public Flux<Trade> saveAll(Flux<Trade> trades) {
 		return trades.transform(source -> Flux.merge(
-			source,
-            source.transform(this::mapToDocument)
-                  .transform(this::batchData)
-                  .flatMap(this::storeInMongo)
-                  .then(Mono.empty())
+				trades,
+				source.transform(this::mapToDocument)
+				      .transform(this::batchData)
+				      .flatMap(this::storeInMongo)
+				      .then(Mono.empty())
 		));
 	}
 
-	private Flux<Document> mapToDocument(Flux<MessageDTO> flux) {
+	private Flux<Document> mapToDocument(Flux<Trade> flux) {
 		// TODO: Replace with corresponding mapping
 
 		return Flux.never();

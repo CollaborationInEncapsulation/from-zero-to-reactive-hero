@@ -16,13 +16,12 @@ repositories {
 ext {
   embeddedMongoVersion = '2.0.1'
   mongoReactiveDriverVersion = '1.7.1'
-  jacksonVersion = '2.9.2'
+  jacksonVersion = '2.9.5'
   socketioVersion = '1.0.0'
   reactorVersion = '3.2.0.BUILD-SNAPSHOT'
-  nettyVirsion = '4.1.20.Final'
-  reactorNettyVersion = '0.7.6.BUILD-SNAPSHOT'
+  reactorNettyVersion = '0.7.7.BUILD-SNAPSHOT'
   rxJava1Version = '1.3.4'
-  powerMockVersion = '1.7.3'
+  powerMockVersion = '2.0.0-beta.5'
   guavaVersion = '24.0-jre'
   diSpecVersion = '1'
 }
