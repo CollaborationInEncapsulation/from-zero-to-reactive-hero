@@ -1,4 +1,4 @@
-package com.example.demo.part_11.controller;
+package com.example.part_11.controller;
 
 import reactor.core.publisher.Mono;
 
@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping
 public class ViewController {
-
 
 	@GetMapping("/")
 	public Mono<String> index() {

@@ -1,4 +1,4 @@
-package com.example.demo.part_11.domain;
+package com.example.part_11.domain;
 
 import com.mongodb.annotations.Immutable;
 import org.bson.types.ObjectId;
