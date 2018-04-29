@@ -34,7 +34,7 @@ public class DefaultTradeServiceTest {
     @Test
     public void verifyTradeInfoMappingToDTO() {
         StepVerifier.create(
-                new DefaultTradeService(cryptoService, tradeRepository).filterTradingEvents(
+                new DefaultTradeService(cryptoService, tradeRepository).filterAndMapTradingEvents(
                         Flux.just(
                                 map().put("Invalid", "A").build(),
                                 map().put(TYPE_KEY, "1").build(),

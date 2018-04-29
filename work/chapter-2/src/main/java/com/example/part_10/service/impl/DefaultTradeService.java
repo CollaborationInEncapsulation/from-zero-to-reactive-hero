@@ -19,7 +19,7 @@ public class DefaultTradeService implements TradeService {
 
 	public DefaultTradeService(CryptoService service, TradeRepository repository) {
 		sharedStream = service.eventsStream()
-		                      .transform(this::filterTradingEvents)
+		                      .transform(this::filterAndMapTradingEvents)
 		                      .transform(trades -> Flux.merge(
 	                              trades,
 			                      trades.transform(this::mapToDomainTrade)
@@ -33,7 +33,7 @@ public class DefaultTradeService implements TradeService {
 		return sharedStream;
 	}
 
-	Flux<MessageDTO<MessageDTO.Trade>> filterTradingEvents(Flux<Map<String, Object>> input) {
+	Flux<MessageDTO<MessageDTO.Trade>> filterAndMapTradingEvents(Flux<Map<String, Object>> input) {
 		// TODO: Add implementation to produce trading events
 		return Flux.never();
 	}
