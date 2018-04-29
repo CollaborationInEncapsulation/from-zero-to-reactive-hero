@@ -1,8 +1,11 @@
-package com.example.part_10.service;
+package com.example.part_10.service.impl;
 
 import com.example.part_10.dto.MessageDTO;
+import com.example.part_10.service.CryptoService;
 import com.google.common.collect.ImmutableMap;
+import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mockito;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
@@ -14,12 +17,18 @@ import static com.example.part_10.service.utils.MessageMapper.MARKET_KEY;
 import static com.example.part_10.service.utils.MessageMapper.PRICE_KEY;
 import static com.example.part_10.service.utils.MessageMapper.TYPE_KEY;
 
-public class PriceServiceTest {
+public class DefaultPriceServiceTest {
+    private final CryptoService cryptoService = Mockito.mock(CryptoService.class);
+
+    @Before
+    public void setUp() {
+        Mockito.when(cryptoService.eventsStream()).thenReturn(Flux.empty());
+    }
 
     @Test
     public void verifyBuildingCurrentPriceEvents() {
         StepVerifier.create(
-                new PriceService().selectOnlyPriceUpdateEvents(
+                new DefaultPriceService(cryptoService).selectOnlyPriceUpdateEvents(
                         Flux.just(
                                 map().put("Invalid", "A").build(),
                                 map().put(TYPE_KEY, "1").build(),
@@ -37,7 +46,8 @@ public class PriceServiceTest {
                                 .put(CURRENCY_KEY, "USD")
                                 .put(MARKET_KEY, "External").build()
                 )
-                .verifyComplete();
+                .expectComplete()
+                .verify(Duration.ofSeconds(2));
     }
 
     // HINT: This is for reference implementation, your implementation may produce different average values
@@ -45,7 +55,7 @@ public class PriceServiceTest {
     @SuppressWarnings("unchecked")
     public void verifyBuildingAveragePriceEvents() {
         StepVerifier.withVirtualTime(() ->
-                new PriceService().averagePrice(
+                new DefaultPriceService(cryptoService).averagePrice(
                         Flux.interval(Duration.ofSeconds(0), Duration.ofSeconds(5))
                                 .map(i -> i + 1)
                                 .doOnNext(i -> System.out.println("Interval: " + i)),
@@ -57,10 +67,10 @@ public class PriceServiceTest {
                                 .replay(1000)
                                 .autoConnect()
                         )
-                .take(10)
-                .take(Duration.ofHours(1))
-                .map(MessageDTO::getData)
-                .doOnNext(a -> System.out.println("AVG: " + a))
+                                               .take(10)
+                                               .take(Duration.ofHours(1))
+                                               .map(MessageDTO::getData)
+                                               .doOnNext(a -> System.out.println("AVG: " + a))
         )
                 .expectSubscription()
                 .thenAwait(Duration.ofDays(1))

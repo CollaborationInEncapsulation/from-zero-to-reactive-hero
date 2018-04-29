@@ -1,4 +1,4 @@
-package com.example.part_10.external.utils;
+package com.example.part_10.service.external.utils;
 
 import java.util.Map;
 

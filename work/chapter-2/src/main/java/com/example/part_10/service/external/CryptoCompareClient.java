@@ -1,6 +1,6 @@
-package com.example.part_10.external;
+package com.example.part_10.service.external;
 
-import com.example.part_10.external.utils.MessageUnpacker;
+import com.example.part_10.service.external.utils.MessageUnpacker;
 import io.socket.client.IO;
 import io.socket.client.Socket;
 import reactor.core.publisher.Flux;
@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
-class ReactiveCryptoListener {
+class CryptoCompareClient {
     private static final Logger logger = Logger.getLogger("external-trading-service");
 
     static Flux<Map<String, Object>> connect(Flux<String> input, Collection<MessageUnpacker> unpackers) {

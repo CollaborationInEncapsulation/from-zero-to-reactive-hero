@@ -1,7 +1,8 @@
-package com.example.part_10.external;
+package com.example.part_10.service.external;
 
-import com.example.part_10.external.utils.PriceMessageUnpacker;
-import com.example.part_10.external.utils.TradeMessageUnpacker;
+import com.example.part_10.service.CryptoService;
+import com.example.part_10.service.external.utils.PriceMessageUnpacker;
+import com.example.part_10.service.external.utils.TradeMessageUnpacker;
 import reactor.core.publisher.Flux;
 
 import java.util.Arrays;
@@ -11,22 +12,22 @@ import java.util.Map;
 //TODO add small history for each subscriber
 //TODO add resilience
 
-public class CryptoConnectionHolder {
+public class CryptoCompareService implements CryptoService {
     public static final int CACHE_SIZE = 3;
 
     private final Flux<Map<String, Object>> reactiveCryptoListener;
 
-    public CryptoConnectionHolder() {
-        reactiveCryptoListener = ReactiveCryptoListener
+    public CryptoCompareService() {
+        reactiveCryptoListener = CryptoCompareClient
                 .connect(
                         Flux.just("5~CCCAGG~BTC~USD", "0~Poloniex~BTC~USD"),
                         Arrays.asList(new PriceMessageUnpacker(), new TradeMessageUnpacker())
                 )
-                .transform(CryptoConnectionHolder::provideResilience)
-                .transform(CryptoConnectionHolder::provideCaching);
+                .transform(CryptoCompareService::provideResilience)
+                .transform(CryptoCompareService::provideCaching);
     }
 
-    public Flux<Map<String, Object>> listenForExternalEvents() {
+    public Flux<Map<String, Object>> eventsStream() {
         return reactiveCryptoListener;
     }
 

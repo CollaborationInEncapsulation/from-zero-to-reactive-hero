@@ -36,7 +36,7 @@ public class MessageMapper {
         );
     }
 
-    public static Document mapToMongoDocument(MessageDTO<MessageDTO.Trade> tradeMessageDTO) {
+    public static Trade mapToDomain(MessageDTO<MessageDTO.Trade> tradeMessageDTO) {
         Trade trade = new Trade();
 
         trade.setPrice(tradeMessageDTO.getData().getPrice());
@@ -45,6 +45,10 @@ public class MessageMapper {
         trade.setMarket(tradeMessageDTO.getMarket());
         trade.setTimestamp(tradeMessageDTO.getTimestamp());
 
+        return trade;
+    }
+
+    public static Document mapToMongoDocument(Trade trade) {
         return new Document(
             new ObjectMapper()
                     .convertValue(trade, new TypeReference<HashMap<String, Object>>() {})
