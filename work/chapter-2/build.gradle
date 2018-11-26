@@ -17,7 +17,8 @@ dependencies {
 
     compile group: 'org.mongodb', name: 'mongodb-driver-reactivestreams', version: mongoReactiveDriverVersion
     compile group: 'io.socket', name: 'socket.io-client', version: socketioVersion
-    compile group: 'io.projectreactor.netty', name: 'reactor-netty', version:reactorNettyVersion
+    compile group: 'io.projectreactor.addons', name: 'reactor-extra', version:reactorExtraVersion
+    compile group: 'io.projectreactor.netty', name: 'reactor-netty', version: reactorNettyVersion
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonVersion
 
     compile group: 'junit', name: 'junit', version: '4.12'

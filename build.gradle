@@ -19,6 +19,7 @@ ext {
   jacksonVersion = '2.9.7'
   socketioVersion = '1.0.0'
   reactorVersion = '3.2.3.BUILD-SNAPSHOT'
+  reactorExtraVersion = '3.2.1.BUILD-SNAPSHOT'
   reactorNettyVersion = '0.8.4.BUILD-SNAPSHOT'
   rxJava1Version = '1.3.4'
   powerMockVersion = '2.0.0-RC.4'

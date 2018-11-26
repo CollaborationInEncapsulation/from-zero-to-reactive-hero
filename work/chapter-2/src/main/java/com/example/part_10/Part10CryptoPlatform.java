@@ -45,7 +45,10 @@ public class Part10CryptoPlatform extends LoggerConfigurationTrait {
                          .file("/favicon.ico", resourcePath("ui/favicon.ico"))
                          .file("/main.js", resourcePath("ui/main.js"))
                          .file("/**", resourcePath("ui/index.html"))
-		          );
+		          )
+		          .bindNow()
+		          .onDispose()
+		          .block();
 	}
 
 	private static BiFunction<WebsocketInbound, WebsocketOutbound, Publisher<Void>> handleWebsocket(WSHandler handler) {

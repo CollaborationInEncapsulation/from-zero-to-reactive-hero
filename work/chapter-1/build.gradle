@@ -17,6 +17,7 @@ dependencies {
 
     compile group: 'io.reactivex', name:'rxjava', version: rxJava1Version
     compile group: 'io.projectreactor', name: 'reactor-core', version: reactorVersion
+    compile group: 'io.projectreactor.addons', name: 'reactor-extra', version: reactorExtraVersion
     compile group: 'javax.inject', name: 'javax.inject', version: diSpecVersion
 
 
