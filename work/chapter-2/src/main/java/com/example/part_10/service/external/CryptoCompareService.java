@@ -20,7 +20,7 @@ public class CryptoCompareService implements CryptoService {
     public CryptoCompareService() {
         reactiveCryptoListener = CryptoCompareClient
                 .connect(
-                        Flux.just("5~CCCAGG~BTC~USD", "0~Poloniex~BTC~USD"),
+                        Flux.just("5~CCCAGG~BTC~USD", "0~Coinbase~BTC~USD", "0~Cexio~BTC~USD"),
                         Arrays.asList(new PriceMessageUnpacker(), new TradeMessageUnpacker())
                 )
                 .transform(CryptoCompareService::provideResilience)
