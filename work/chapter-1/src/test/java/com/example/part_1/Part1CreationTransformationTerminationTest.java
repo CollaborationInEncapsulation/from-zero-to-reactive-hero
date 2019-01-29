@@ -48,19 +48,6 @@ public class Part1CreationTransformationTerminationTest {
     }
 
     @Test
-    public void fromFutureTest() {
-        AssertableSubscriber<String> assertable = fromFutureInIOScheduler(CompletableFuture.completedFuture("test"))
-                .test()
-                .awaitValueCount(1, 10, TimeUnit.SECONDS)
-                .assertValue("test")
-                .assertCompleted()
-                .awaitTerminalEvent();
-        Thread lastSeenThread = assertable.getLastSeenThread();
-
-        Assert.assertTrue("Expect execution on I/O thread", lastSeenThread.getName().contains("RxIoScheduler-"));
-    }
-
-    @Test
     public void errorObservableTest() {
         NullPointerException testException = new NullPointerException("test");
 
@@ -134,6 +121,37 @@ public class Part1CreationTransformationTerminationTest {
     }
 
     @Test
+    public void mapToStringTest() {
+        mapToString(Observable.just(1L, 2L, 3L, 4L))
+                .test()
+                .assertValues("1", "2", "3", "4")
+                .assertCompleted()
+                .awaitTerminalEvent();
+    }
+
+    @Test
+    public void filterTest() {
+        findAllWordsWithPrefixABC(Observable.just("asdas", "gdfgsdfg", "ABCasda"))
+                .test()
+                .assertValue("ABCasda")
+                .assertCompleted()
+                .awaitTerminalEvent();
+    }
+
+    @Test
+    public void fromFutureTest() {
+        AssertableSubscriber<String> assertable = fromFutureInIOScheduler(CompletableFuture.completedFuture("test"))
+                .test()
+                .awaitValueCount(1, 10, TimeUnit.SECONDS)
+                .assertValue("test")
+                .assertCompleted()
+                .awaitTerminalEvent();
+        Thread lastSeenThread = assertable.getLastSeenThread();
+
+        Assert.assertTrue("Expect execution on I/O thread", lastSeenThread.getName().contains("RxIoScheduler-"));
+    }
+
+    @Test
     public void iterate10TimesTest() throws Exception {
         ArgumentCaptor<Integer> captor = ArgumentCaptor.forClass(Integer.class);
         PowerMockito.spy(Observable.class);
@@ -149,28 +167,10 @@ public class Part1CreationTransformationTerminationTest {
     }
 
     @Test
-    public void mapToStringTest() {
-        mapToString(Observable.just(1L, 2L, 3L, 4L))
-                .test()
-                .assertValues("1", "2", "3", "4")
-                .assertCompleted()
-                .awaitTerminalEvent();
-    }
-
-    @Test
     public void flatMapWordsToCharactersTest() {
         flatMapWordsToCharacters(Observable.just("ABC", "DEFG", "HJKL"))
                 .test()
                 .assertValues('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L')
-                .assertCompleted()
-                .awaitTerminalEvent();
-    }
-
-    @Test
-    public void filterTest() {
-        findAllWordsWithPrefixABC(Observable.just("asdas", "gdfgsdfg", "ABCasda"))
-                .test()
-                .assertValue("ABCasda")
                 .assertCompleted()
                 .awaitTerminalEvent();
     }

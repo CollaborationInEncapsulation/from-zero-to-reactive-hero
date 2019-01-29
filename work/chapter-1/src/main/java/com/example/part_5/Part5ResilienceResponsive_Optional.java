@@ -13,7 +13,6 @@ public class Part5ResilienceResponsive_Optional {
 	@Complexity(HARD)
 	public static Publisher<Integer> provideSupportOfContinuation(Flux<Integer> values) {
 		// TODO: Enable continuation strategy
-		// Provide additional fix in test to add Hooks#onErrorDrop to enable global errors hooks
 
 		return values;
 	}

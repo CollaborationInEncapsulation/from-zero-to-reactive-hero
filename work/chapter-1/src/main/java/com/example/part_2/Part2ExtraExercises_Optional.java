@@ -25,7 +25,7 @@ public class Part2ExtraExercises_Optional {
 
 	@Optional
 	@Complexity(EASY)
-	public static Publisher<String> mergeSeveralSourcesOrdered(Publisher<String>... sources) {
+	public static Publisher<String> mergeSeveralSourcesSequential(Publisher<String>... sources) {
 		// TODO: merge all sources in one stream with order keeping
 		/*
 		 * HINT: Flux#mergeSequential for eager, parallel publisher subscribing and merging

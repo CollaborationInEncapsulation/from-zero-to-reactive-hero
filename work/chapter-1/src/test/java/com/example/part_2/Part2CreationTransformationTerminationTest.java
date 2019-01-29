@@ -15,6 +15,21 @@ import static com.example.part_2.Part2CreationTransformationTermination.*;
 public class Part2CreationTransformationTerminationTest {
 
     @Test
+    public void collectToListTest() {
+        StepVerifier
+                .create(collectAllItemsToList(Flux.just("A", "B", "C")))
+                .expectSubscription()
+                .expectNext(Arrays.asList("A", "B", "C"))
+                .verifyComplete();
+    }
+
+    @Test
+    public void lastElementFromSourceTest() {
+        String element = lastElementFromSource(Flux.just("Hello", "World"));
+        Assert.assertEquals("Expected 'World' but was [" + element + "]", "World", element);
+    }
+
+    @Test
     public void mergeSeveralSourcesTest() {
 
         StepVerifier
@@ -26,6 +41,47 @@ public class Part2CreationTransformationTerminationTest {
                 .expectNext("B")
                 .expectNoEvent(Duration.ofSeconds(1))
                 .expectNext("A")
+                .verifyComplete();
+    }
+
+    @Test
+    public void firstEmittedRaceTest() {
+        StepVerifier
+                .withVirtualTime(() -> fromFirstEmitted(
+                        Flux.just("a").delaySubscription(Duration.ofSeconds(1)),
+                        Flux.just("b", "c").delaySubscription(Duration.ofMillis(100)),
+                        Flux.just("D", "Z").delaySubscription(Duration.ofMillis(10))
+                ))
+                .expectSubscription()
+                .expectNoEvent(Duration.ofMillis(10))
+                .expectNext("D", "Z")
+                .verifyComplete();
+    }
+
+    @Test
+    public void groupByWordsByFirstLatterTest() {
+        StepVerifier
+                .create(
+                        Flux
+                                .from(groupWordsByFirstLatter(Flux.just("ABC", "BCD", "CDE", "BEF", "ADE", "CFG")))
+                                .flatMap(gf -> gf.collectList().map(l -> Tuples.of(gf.key(), l)))
+                )
+                .expectSubscription()
+                .expectNext(Tuples.of('A', Arrays.asList("ABC", "ADE")))
+                .expectNext(Tuples.of('B', Arrays.asList("BCD", "BEF")))
+                .expectNext(Tuples.of('C', Arrays.asList("CDE", "CFG")))
+                .verifyComplete();
+    }
+
+    @Test
+    public void executeLazyTerminationOperationAndSendHelloTest() {
+        StepVerifier
+                .withVirtualTime(() -> executeLazyTerminationOperationAndSendHello(
+                        Flux.just("A").delaySubscription(Duration.ofSeconds(1))
+                ))
+                .expectSubscription()
+                .expectNoEvent(Duration.ofSeconds(1))
+                .expectNext("Hello")
                 .verifyComplete();
     }
 
@@ -68,35 +124,6 @@ public class Part2CreationTransformationTerminationTest {
     }
 
     @Test
-    public void firstEmittedRaceTest() {
-        StepVerifier
-                .withVirtualTime(() -> fromFirstEmitted(
-                        Flux.just("a").delaySubscription(Duration.ofSeconds(1)),
-                        Flux.just("b", "c").delaySubscription(Duration.ofMillis(100)),
-                        Flux.just("D", "Z").delaySubscription(Duration.ofMillis(10))
-                ))
-                .expectSubscription()
-                .expectNoEvent(Duration.ofMillis(10))
-                .expectNext("D", "Z")
-                .verifyComplete();
-    }
-
-    @Test
-    public void groupByWordsByFirstLatterTest() {
-        StepVerifier
-                .create(
-                        Flux
-                                .from(groupWordsByFirstLatter(Flux.just("ABC", "BCD", "CDE", "BEF", "ADE", "CFG")))
-                                .flatMap(gf -> gf.collectList().map(l -> Tuples.of(gf.key(), l)))
-                )
-                .expectSubscription()
-                .expectNext(Tuples.of('A', Arrays.asList("ABC", "ADE")))
-                .expectNext(Tuples.of('B', Arrays.asList("BCD", "BEF")))
-                .expectNext(Tuples.of('C', Arrays.asList("CDE", "CFG")))
-                .verifyComplete();
-    }
-
-    @Test
     public void switchBetweenSourcesTest() {
         StepVerifier
                 .withVirtualTime(() -> fillIceCreamWaffleBowl(
@@ -123,32 +150,5 @@ public class Part2CreationTransformationTerminationTest {
                 // instead of merely awaiting the completion signal from upstream
                 .thenCancel()
                 .verify();
-    }
-
-    @Test
-    public void collectToListTest() {
-        StepVerifier
-                .create(collectAllItemsToList(Flux.just("A", "B", "C")))
-                .expectSubscription()
-                .expectNext(Arrays.asList("A", "B", "C"))
-                .verifyComplete();
-    }
-
-    @Test
-    public void executeLazyTerminationOperationAndSendHelloTest() {
-        StepVerifier
-                .withVirtualTime(() -> executeLazyTerminationOperationAndSendHello(
-                        Flux.just("A").delaySubscription(Duration.ofSeconds(1))
-                ))
-                .expectSubscription()
-                .expectNoEvent(Duration.ofSeconds(1))
-                .expectNext("Hello")
-                .verifyComplete();
-    }
-
-    @Test
-    public void lastElementFromSourceTest() {
-        String element = lastElementFromSource(Flux.just("Hello", "World"));
-        Assert.assertEquals("Expected 'World' but was [" + element + "]", "World", element);
     }
 }

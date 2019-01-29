@@ -40,7 +40,7 @@ public class Part2CreationTransformationTermination {
 
     @Complexity(EASY)
     public static Publisher<String> fromFirstEmitted(Publisher<String>... sources) {
-        // TODO: return events from the first emitted
+        // TODO: take elements from the stream, events from which were emitted earliest than in other
         // HINT: Flux.first()
 
         throw new RuntimeException("Not implemented");

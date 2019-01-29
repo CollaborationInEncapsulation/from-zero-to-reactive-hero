@@ -17,7 +17,13 @@ import static com.example.part_2.Part2ExtraExercises_Optional.*;
 public class Part2ExtraExercises_OptionalTest {
 
     @Test
-    public void mergeSeveralSourcesOrderedTest() {
+    public void firstElementFromSourceTest() {
+        String element = firstElementFromSource(Flux.just("Hello", "World"));
+        Assert.assertEquals("Expected 'Hello' but was [" + element + "]", "Hello", element);
+    }
+
+    @Test
+    public void mergeSeveralSourcesSequentialTest() {
         PublisherProbe[] probes = new PublisherProbe[2];
 
         StepVerifier
@@ -28,7 +34,7 @@ public class Part2ExtraExercises_OptionalTest {
                     probes[0] = probeA;
                     probes[1] = probeB;
 
-                    return mergeSeveralSourcesOrdered(
+                    return mergeSeveralSourcesSequential(
                             probeA.mono(),
                             probeB.mono()
                     );
@@ -73,12 +79,6 @@ public class Part2ExtraExercises_OptionalTest {
                 .then(() -> probes[1].assertWasRequested())
                 .expectNext("CHOCOLATE")
                 .verifyComplete();
-    }
-
-    @Test
-    public void firstElementFromSourceTest() {
-        String element = firstElementFromSource(Flux.just("Hello", "World"));
-        Assert.assertEquals("Expected 'Hello' but was [" + element + "]", "Hello", element);
     }
 
     @Test

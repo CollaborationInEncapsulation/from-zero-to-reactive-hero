@@ -49,6 +49,18 @@ public class Part3MultithreadingParallelizationTest {
     }
 
     @Test
+    public void paralellizeWorkOnDifferentThreadsTest() {
+        StepVerifier
+                .create(paralellizeWorkOnDifferentThreads(
+                        Flux.just("Hello", "Hello", "Hello")
+                ))
+                .expectSubscription()
+                .expectNext("Hello", "Hello", "Hello")
+                .expectComplete()
+                .verify();
+    }
+
+    @Test
     public void paralellizeLongRunningWorkOnUnboundedAmountOfThreadTest() {
         Thread[] threads = new Thread[3];
         StepVerifier
@@ -86,17 +98,5 @@ public class Part3MultithreadingParallelizationTest {
                 "Expected execution on different Threads",
                 !threads[0].equals(threads[2])
         );
-    }
-
-    @Test
-    public void paralellizeWorkOnDifferentThreadsTest() {
-        StepVerifier
-                .create(paralellizeWorkOnDifferentThreads(
-                        Flux.just("Hello", "Hello", "Hello")
-                ))
-                .expectSubscription()
-                .expectNext("Hello", "Hello", "Hello")
-                .expectComplete()
-                .verify();
     }
 }

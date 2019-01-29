@@ -15,11 +15,29 @@ import static com.example.part_5.Part5ResilienceResponsive.*;
 public class Part5ResilienceResponsiveTest {
 
     @Test
+    public void fallbackHelloOnEmptyTest() {
+        StepVerifier
+                .create(fallbackHelloOnEmpty(Flux.empty()))
+                .expectSubscription()
+                .expectNext("Hello")
+                .verifyComplete();
+    }
+
+    @Test
+    public void fallbackHelloOnErrorTest() {
+        StepVerifier
+                .create(fallbackHelloOnError(Flux.error(new RuntimeException())))
+                .expectSubscription()
+                .expectNext("Hello")
+                .verifyComplete();
+    }
+
+    @Test
     public void retryOnErrorTest() throws Exception {
         Callable<String> callable = Mockito.mock(Callable.class);
         Mockito.when(callable.call())
-                .thenThrow(new RuntimeException())
-                .thenReturn("Hello");
+               .thenThrow(new RuntimeException())
+               .thenReturn("Hello");
 
         StepVerifier
                 .create(retryOnError(Mono.fromCallable(callable)))
@@ -27,24 +45,6 @@ public class Part5ResilienceResponsiveTest {
                 .expectNext("Hello")
                 .expectComplete()
                 .verify();
-    }
-
-    @Test
-    public void timeoutLongOperationWithCallableTest() {
-        StepVerifier
-                .create(timeoutLongOperation(() -> {
-                    try {
-                        Thread.sleep(1000000);
-                    } catch (InterruptedException e) {
-                        return null;
-                    }
-
-                    return "Toooooo long";
-                }))
-                .expectSubscription()
-                .expectNext("Hello")
-                .expectComplete()
-                .verify(Duration.ofSeconds(2));
     }
 
     @Test
@@ -67,20 +67,20 @@ public class Part5ResilienceResponsiveTest {
     }
 
     @Test
-    public void fallbackHelloOnErrorTest() {
+    public void timeoutLongOperationWithCallableTest() {
         StepVerifier
-                .create(fallbackHelloOnError(Flux.error(new RuntimeException())))
-                .expectSubscription()
-                .expectNext("Hello")
-                .verifyComplete();
-    }
+                .create(timeoutLongOperation(() -> {
+                    try {
+                        Thread.sleep(1000000);
+                    } catch (InterruptedException e) {
+                        return null;
+                    }
 
-    @Test
-    public void fallbackHelloOnEmptyTest() {
-        StepVerifier
-                .create(fallbackHelloOnEmpty(Flux.empty()))
+                    return "Toooooo long";
+                }))
                 .expectSubscription()
                 .expectNext("Hello")
-                .verifyComplete();
+                .expectComplete()
+                .verify(Duration.ofSeconds(2));
     }
 }

@@ -111,7 +111,7 @@ public class Injector {
 
 				return proxy(instance, source);
 			} else {
-				instance = source.newInstance();
+				instance = source.getDeclaredConstructor().newInstance();
 
 				return proxy(instance, source.getInterfaces());
 			}
