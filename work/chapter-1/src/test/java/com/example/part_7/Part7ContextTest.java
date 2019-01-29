@@ -37,14 +37,17 @@ public class Part7ContextTest {
 
 	@Test
 	public void provideCorrectContext1() {
-		Mono<String> a = Mono.subscriberContext().map(context -> context.get("a"));
-		Mono<String> b = Mono.subscriberContext().map(context -> context.get("b"));
+		Mono<String> a = Mono.subscriberContext()
+		                     .filter( context -> context.hasKey("a") && !context.hasKey("b"))
+		                     .map(context -> context.get("a"));
+		Mono<String> b = Mono.subscriberContext()
+		                     .filter( context -> context.hasKey("b") && !context.hasKey("a"))
+		                     .map(context -> context.get("b"));
 		Flux<String> flux =
 				provideCorrectContext(a, Context.of("a", "a"), b, Context.of("b", "b"));
 
 		StepVerifier.create(flux)
 		            .expectSubscription()
-		            .expectAccessibleContext().hasKey("b").then()
 		            .expectNext("a")
 		            .expectNext("b")
 		            .verifyComplete();
