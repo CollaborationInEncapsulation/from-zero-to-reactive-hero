@@ -19,7 +19,7 @@ public class Part5ResilienceResponsive_Optional {
 
 	@Complexity(HARD)
 	public static Publisher<Integer> provideSupportOfContinuationWithoutErrorStrategy(Flux<Integer> values, Function<Integer, Integer> mapping) {
-		// TODO: handle errors using flatting
+		// TODO: modify to HANDLE errors
 
 		return values.map(mapping);
 	}
