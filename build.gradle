@@ -14,7 +14,7 @@ repositories {
 
 
 ext {
-  embeddedMongoVersion = '2.1.1'
+  embeddedMongoVersion = '2.2.0'
   mongoReactiveDriverVersion = '1.10.0'
   jacksonVersion = '2.9.7'
   socketioVersion = '1.0.0'

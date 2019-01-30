@@ -18,7 +18,7 @@ public class EmbeddedMongo {
 		String bindIp = "localhost";
 		int port = 27017;
 		IMongodConfig mongodConfig = new MongodConfigBuilder()
-				.version(Version.Main.DEVELOPMENT)
+				.version(Version.Main.PRODUCTION)
 				.net(new Net(bindIp, port, Network.localhostIsIPv6()))
 				.build();
 
