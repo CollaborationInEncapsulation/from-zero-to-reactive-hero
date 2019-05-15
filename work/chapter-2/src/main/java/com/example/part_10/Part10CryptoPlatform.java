@@ -18,6 +18,7 @@ import reactor.core.publisher.Flux;
 import reactor.netty.http.server.HttpServer;
 import reactor.netty.http.websocket.WebsocketInbound;
 import reactor.netty.http.websocket.WebsocketOutbound;
+import reactor.util.Loggers;
 
 import java.io.IOException;
 import java.util.function.BiFunction;
@@ -30,6 +31,7 @@ public class Part10CryptoPlatform extends LoggerConfigurationTrait {
 	private static final Logger logger = Logger.getLogger("http-server");
 
 	public static void main(String[] args) throws IOException {
+		Loggers.useSl4jLoggers();
 		CryptoService cryptoCompareService = new CryptoCompareService();
 		TradeRepository tradeRepository = new DefaultTradeRepository();
 		PriceService defaultPriceService = new DefaultPriceService(cryptoCompareService);
@@ -38,18 +40,19 @@ public class Part10CryptoPlatform extends LoggerConfigurationTrait {
 
 		EmbeddedMongo.run();
 		HttpServer.create()
-                  .host("localhost")
-                  .port(8080)
-                  .route(hsr ->
-                      hsr.ws("/stream", handleWebsocket(handler))
+		          .host("localhost")
+		          .port(8080)
+		          .route(hsr ->
+			          hsr.ws("/stream", handleWebsocket(handler))
                          .file("/favicon.ico", resourcePath("ui/favicon.ico"))
                          .file("/main.js", resourcePath("ui/main.js"))
-                         .file("/**", resourcePath("ui/index.html"))
-                  )
-                  .bindNow()
-                  .onDispose()
-                  .block();
-    }
+                         .file("", resourcePath("ui/index.html"))
+                         .file("/", resourcePath("ui/index.html"))
+		          )
+		          .bindNow()
+		          .onDispose()
+		          .block();
+	}
 
 	private static BiFunction<WebsocketInbound, WebsocketOutbound, Publisher<Void>> handleWebsocket(WSHandler handler) {
 		return (req, res) ->

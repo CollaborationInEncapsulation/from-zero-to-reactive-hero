@@ -18,7 +18,7 @@ public class CryptoCompareService implements CryptoService {
     private final Flux<Map<String, Object>> reactiveCryptoListener;
 
     public CryptoCompareService() {
-        reactiveCryptoListener = CryptoCompareClient
+        reactiveCryptoListener = FakeCryptoCompareClient
                 .connect(
                         Flux.just("5~CCCAGG~BTC~USD", "0~Poloniex~BTC~USD"),
                         Arrays.asList(new PriceMessageUnpacker(), new TradeMessageUnpacker())
