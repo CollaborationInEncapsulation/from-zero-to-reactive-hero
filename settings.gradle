@@ -1,4 +1,5 @@
 rootProject.name = 'from-zero-to-reactive-hero'
+
 include "plugin"
-include "work/chapter-1"
-include "work/chapter-2"
+include "work:chapter-1"
+include "work:chapter-2"

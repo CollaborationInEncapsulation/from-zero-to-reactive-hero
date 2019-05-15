@@ -2,8 +2,8 @@ package com.example.part_10.utils;
 
 import org.reactivestreams.Publisher;
 import reactor.core.publisher.Flux;
-import reactor.ipc.netty.http.websocket.WebsocketInbound;
-import reactor.ipc.netty.http.websocket.WebsocketOutbound;
+import reactor.netty.http.websocket.WebsocketInbound;
+import reactor.netty.http.websocket.WebsocketOutbound;
 
 import java.nio.charset.Charset;
 import java.util.function.Function;

@@ -15,9 +15,9 @@ import com.example.part_10.utils.LoggerConfigurationTrait;
 import com.example.part_10.utils.NettyUtils;
 import org.reactivestreams.Publisher;
 import reactor.core.publisher.Flux;
-import reactor.ipc.netty.http.server.HttpServer;
-import reactor.ipc.netty.http.websocket.WebsocketInbound;
-import reactor.ipc.netty.http.websocket.WebsocketOutbound;
+import reactor.netty.http.server.HttpServer;
+import reactor.netty.http.websocket.WebsocketInbound;
+import reactor.netty.http.websocket.WebsocketOutbound;
 
 import java.io.IOException;
 import java.util.function.BiFunction;
@@ -37,14 +37,19 @@ public class Part10CryptoPlatform extends LoggerConfigurationTrait {
 		WSHandler handler = new WSHandler(defaultPriceService, defaultTradeService);
 
 		EmbeddedMongo.run();
-		HttpServer.create(8080)
-		          .startRouterAndAwait(hsr ->
-			          hsr.ws("/stream", handleWebsocket(handler))
+		HttpServer.create()
+                  .host("localhost")
+                  .port(8080)
+                  .route(hsr ->
+                      hsr.ws("/stream", handleWebsocket(handler))
                          .file("/favicon.ico", resourcePath("ui/favicon.ico"))
                          .file("/main.js", resourcePath("ui/main.js"))
                          .file("/**", resourcePath("ui/index.html"))
-		          );
-	}
+                  )
+                  .bindNow()
+                  .onDispose()
+                  .block();
+    }
 
 	private static BiFunction<WebsocketInbound, WebsocketOutbound, Publisher<Void>> handleWebsocket(WSHandler handler) {
 		return (req, res) ->
