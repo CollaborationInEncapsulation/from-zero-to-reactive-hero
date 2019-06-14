@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.1.1.BUILD-SNAPSHOT'
+		springBootVersion = '2.1.5.BUILD-SNAPSHOT'
 	}
 	repositories {
 		mavenCentral()
@@ -30,7 +30,7 @@ repositories {
 
 dependencies {
 
-  	compile("io.projectreactor:reactor-core:$reactorVersion")
+  	compile("io.projectreactor:reactor-core")
     compile("io.socket:socket.io-client:$socketioVersion")
     compile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
 	compile('org.springframework.boot:spring-boot-starter-actuator')

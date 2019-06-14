@@ -33,7 +33,7 @@ public class Part2CreationTransformationTerminationTest {
     public void mergeSeveralSourcesTest() {
 
         StepVerifier
-                .withVirtualTime(() -> mergeSeveralSources(
+                .withVirtualTime(() ->mergeSeveralSources(
                         Flux.just("A").delaySubscription(Duration.ofSeconds(1)),
                         Flux.just("B")
                 ))
@@ -140,9 +140,9 @@ public class Part2CreationTransformationTerminationTest {
                 .thenAwait(Duration.ofSeconds(1))
                 .expectNext("B14", "B15", "B16", "B17", "B18")
                 .thenAwait(Duration.ofSeconds(1))
-                .expectNext("A7", "A8")
+                .expectNext("A5", "A7", "A8")
                 .thenAwait(Duration.ofSeconds(1))
-                .expectNext("B24", "B25", "B26", "B27", "B28")
+                .expectNext("B19", "B24", "B25", "B26", "B27", "B28")
                 .thenAwait(Duration.ofSeconds(1))
                 .expectNext("B29", "B30", "B31", "B32", "B33")
                 // Actually the last source is infinitive stream
