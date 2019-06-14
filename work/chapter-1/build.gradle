@@ -16,7 +16,9 @@ dependencies {
     compile project(":plugin")
 
     compile group: 'io.reactivex', name:'rxjava', version: rxJava1Version
+    compile group: 'io.projectreactor.tools', name:'blockhound', version: '1.0.0.M4'
     compile group: 'io.projectreactor', name: 'reactor-core'
+    compile group: 'io.projectreactor', name: 'reactor-tools'
     compile group: 'io.projectreactor.addons', name: 'reactor-extra'
     compile group: 'javax.inject', name: 'javax.inject', version: diSpecVersion
 
