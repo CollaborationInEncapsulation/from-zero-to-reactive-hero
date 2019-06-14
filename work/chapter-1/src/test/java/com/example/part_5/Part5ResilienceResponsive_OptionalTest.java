@@ -20,10 +20,7 @@ public class Part5ResilienceResponsive_OptionalTest {
 		            .expectSubscription()
 		            .expectNextCount(5)
 		            .expectComplete()
-		            .verifyThenAssertThat()
-		            .hasDroppedErrors(1);
-
-		// TODO: fixme
+		            .verify();
 	}
 
 	@Test

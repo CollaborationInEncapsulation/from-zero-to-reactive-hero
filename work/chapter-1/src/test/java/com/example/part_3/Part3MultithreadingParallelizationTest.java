@@ -6,6 +6,7 @@ import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
 import java.time.Duration;
+import java.util.concurrent.Callable;
 
 import static com.example.part_3.Part3MultithreadingParallelization.*;
 
@@ -64,7 +65,7 @@ public class Part3MultithreadingParallelizationTest {
     public void paralellizeLongRunningWorkOnUnboundedAmountOfThreadTest() {
         Thread[] threads = new Thread[3];
         StepVerifier
-                .create(paralellizeLongRunningWorkOnUnboundedAmountOfThread(Flux.just(
+                .create(paralellizeLongRunningWorkOnUnboundedAmountOfThread(Flux.<Callable<String>>just(
                         () -> {
                             threads[0] = Thread.currentThread();
                             Thread.sleep(300);
@@ -80,9 +81,10 @@ public class Part3MultithreadingParallelizationTest {
                             Thread.sleep(300);
                             return "Hello";
                         }
-                )))
+                ).repeat(20)))
                 .expectSubscription()
                 .expectNext("Hello", "Hello", "Hello")
+                .expectNextCount(60)
                 .expectComplete()
                 .verify(Duration.ofMillis(600));
 
