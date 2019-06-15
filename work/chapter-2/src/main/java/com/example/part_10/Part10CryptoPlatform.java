@@ -46,6 +46,8 @@ public class Part10CryptoPlatform extends LoggerConfigurationTrait {
 			          hsr.ws("/stream", handleWebsocket(handler))
                          .file("/favicon.ico", resourcePath("ui/favicon.ico"))
                          .file("/main.js", resourcePath("ui/main.js"))
+                         .file("", resourcePath("ui/index.html"))
+                         .file("/", resourcePath("ui/index.html"))
                          .file("/**", resourcePath("ui/index.html"))
 		          )
 		          .bindNow()

@@ -20,7 +20,7 @@ class CryptoCompareClient {
             Socket socket;
 
             try {
-                socket = IO.socket("https://streamer.cryptocompare.com/");
+                socket = IO.socket("https://streamer.cryptocompare.com");
                 logger.info("[EXTERNAL-SERVICE] Connecting to CryptoCompare.com ...");
             } catch (URISyntaxException e) {
                 sink.error(e);
