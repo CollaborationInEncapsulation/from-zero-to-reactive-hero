@@ -15,7 +15,7 @@ import reactor.core.publisher.Flux;
  * connections in the connection-pool, then the application will be overwhelmed by
  * redundant Thread. Hence additional memory will be used.
  *
- * As great developers, we have to talk that noisy issue. To avoid that insufficient
+ * As great developers, we have to tackle that noisy issue. To avoid that insufficient
  * wasting we have to provide adaptation of {@link com.example.part_3.part3_extra_wrapping_blocking_jpa_optional.impl.BlockingPaymentsHistoryJpaRepository}
  * using {@link ReactivePaymentsHistoryJpaRepositoryAdapter} and custom Scheduler
  * service. In turn, you have to care about connections-pool limitations so your
