@@ -21,7 +21,7 @@ subprojects {
   }
 
   dependencies {
-    implementation platform('io.projectreactor:reactor-bom:Dysprosium-BUILD-SNAPSHOT')
+    implementation platform('io.projectreactor:reactor-bom:Dysprosium-RELEASE')
   }
 }
 
