@@ -13,14 +13,14 @@ import org.bson.Document;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-public class DefaultTradeRepository implements TradeRepository {
+public class MongoTradeRepository implements TradeRepository {
 
 	private static final String DB_NAME         = "crypto";
 	private static final String COLLECTION_NAME = "trades";
 
 	private final MongoCollection<Document> collection;
 
-	public DefaultTradeRepository() {
+	public MongoTradeRepository() {
 		MongoClient client = MongoClients.create();
 
 		collection = client.getDatabase(DB_NAME)

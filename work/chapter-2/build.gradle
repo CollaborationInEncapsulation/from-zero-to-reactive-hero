@@ -25,6 +25,10 @@ dependencies {
     compile group: 'io.projectreactor', name: 'reactor-test'
     compile group: "de.flapdoodle.embed", name: "de.flapdoodle.embed.mongo", version: embeddedMongoVersion
 
+    compile group: 'io.r2dbc', name: 'r2dbc-spi', version: '0.8.0.RC1'
+    compile group: 'io.r2dbc', name: 'r2dbc-client', version: '0.8.0.RC1'
+    compile group: 'io.r2dbc', name: 'r2dbc-h2', version: '0.8.0.RC1'
+
     testCompile group: 'org.powermock', name:'powermock-module-junit4', version: powerMockVersion
     testCompile group: 'org.powermock', name: 'powermock-api-mockito2', version: powerMockVersion
     testCompile group: 'com.google.guava', name: 'guava', version: guavaVersion

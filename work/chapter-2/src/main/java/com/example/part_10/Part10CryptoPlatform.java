@@ -2,14 +2,13 @@ package com.example.part_10;
 
 import com.example.part_10.controller.WSHandler;
 import com.example.part_10.repository.TradeRepository;
+import com.example.part_10.repository.impl.H2TradeRepository;
 import com.example.part_10.service.CryptoService;
 import com.example.part_10.service.PriceService;
 import com.example.part_10.service.TradeService;
 import com.example.part_10.service.external.CryptoCompareService;
 import com.example.part_10.service.impl.DefaultPriceService;
-import com.example.part_10.repository.impl.DefaultTradeRepository;
 import com.example.part_10.service.impl.DefaultTradeService;
-import com.example.part_10.utils.EmbeddedMongo;
 import com.example.part_10.utils.JsonUtils;
 import com.example.part_10.utils.LoggerConfigurationTrait;
 import com.example.part_10.utils.NettyUtils;
@@ -33,12 +32,12 @@ public class Part10CryptoPlatform extends LoggerConfigurationTrait {
 	public static void main(String[] args) throws IOException {
 		Loggers.useSl4jLoggers();
 		CryptoService cryptoCompareService = new CryptoCompareService();
-		TradeRepository tradeRepository = new DefaultTradeRepository();
+		TradeRepository tradeRepository = new H2TradeRepository();
 		PriceService defaultPriceService = new DefaultPriceService(cryptoCompareService);
 		TradeService defaultTradeService = new DefaultTradeService(cryptoCompareService, tradeRepository);
 		WSHandler handler = new WSHandler(defaultPriceService, defaultTradeService);
 
-		EmbeddedMongo.run();
+		//EmbeddedMongo.run();
 		HttpServer.create()
 		          .host("localhost")
 		          .port(8080)
