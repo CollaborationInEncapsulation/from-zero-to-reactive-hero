@@ -33,6 +33,7 @@ public class Part10CryptoPlatform extends LoggerConfigurationTrait {
 	public static void main(String[] args) throws IOException {
 		Loggers.useSl4jLoggers();
 		MetricsConfig.init();
+		// TODO: Integrate Metrics reporting for all the services using Flux#metrics
 
 		CryptoService cryptoCompareService = new CryptoCompareService();
 		TradeRepository tradeRepository = new H2TradeRepository();
