@@ -1,5 +1,9 @@
 package com.example.part_10;
 
+import java.io.IOException;
+import java.util.function.BiFunction;
+import java.util.logging.Logger;
+
 import com.example.part_10.controller.WSHandler;
 import com.example.part_10.repository.TradeRepository;
 import com.example.part_10.repository.impl.H2TradeRepository;
@@ -11,6 +15,7 @@ import com.example.part_10.service.impl.DefaultPriceService;
 import com.example.part_10.service.impl.DefaultTradeService;
 import com.example.part_10.utils.JsonUtils;
 import com.example.part_10.utils.LoggerConfigurationTrait;
+import com.example.part_10.utils.MetricsConfig;
 import com.example.part_10.utils.NettyUtils;
 import org.reactivestreams.Publisher;
 import reactor.core.publisher.Flux;
@@ -18,10 +23,6 @@ import reactor.netty.http.server.HttpServer;
 import reactor.netty.http.websocket.WebsocketInbound;
 import reactor.netty.http.websocket.WebsocketOutbound;
 import reactor.util.Loggers;
-
-import java.io.IOException;
-import java.util.function.BiFunction;
-import java.util.logging.Logger;
 
 import static com.example.part_10.utils.HttpResourceResolver.resourcePath;
 
@@ -31,6 +32,8 @@ public class Part10CryptoPlatform extends LoggerConfigurationTrait {
 
 	public static void main(String[] args) throws IOException {
 		Loggers.useSl4jLoggers();
+		MetricsConfig.init();
+
 		CryptoService cryptoCompareService = new CryptoCompareService();
 		TradeRepository tradeRepository = new H2TradeRepository();
 		PriceService defaultPriceService = new DefaultPriceService(cryptoCompareService);

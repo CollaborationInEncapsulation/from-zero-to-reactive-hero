@@ -44,7 +44,7 @@ public class H2TradeRepository implements TradeRepository {
             .build();
 
         H2ConnectionFactory h2ConnectionFactory = new H2ConnectionFactory(conf);
-
+        // TODO: Add connection pool
         h2Client = new R2dbc(h2ConnectionFactory);
 
         initDB();

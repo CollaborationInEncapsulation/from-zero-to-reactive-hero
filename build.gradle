@@ -22,6 +22,8 @@ subprojects {
 
   dependencies {
     implementation platform('io.projectreactor:reactor-bom:Dysprosium-RELEASE')
+    implementation platform('io.micrometer:micrometer-bom:1.3.2')
+    implementation platform('io.dropwizard:dropwizard-bom:2.0.0')
   }
 }
 

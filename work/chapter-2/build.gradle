@@ -20,6 +20,8 @@ dependencies {
     compile group: 'io.projectreactor.addons', name: 'reactor-extra'
     compile group: 'io.projectreactor.netty', name: 'reactor-netty'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonVersion
+    compile group: 'io.micrometer', name: 'micrometer-core'
+    compile group: 'io.dropwizard.metrics', name: 'metrics-core', version: '3.1.0'
 
     compile group: 'junit', name: 'junit', version: '4.12'
     compile group: 'io.projectreactor', name: 'reactor-test'
