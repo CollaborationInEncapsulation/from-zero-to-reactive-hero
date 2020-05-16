@@ -14,19 +14,27 @@ public class Part3MultithreadingParallelizationTest {
 
     @Test
     public void publishOnParallelThreadSchedulerTest() {
-        Thread[] threads = new Thread[2];
+        AtomicReference<Thread> subscribeOnThread = new AtomicReference<>();
+        AtomicReference<Thread> publishOnThread = new AtomicReference<>();
         StepVerifier
-                .create(publishOnParallelThreadScheduler(Flux.defer(() -> {
-                    threads[0] = Thread.currentThread();
-                    return Flux.just("Hello");
-                })))
-                .expectSubscription()
-                .expectNext("Hello")
-                .verifyComplete();
+            .create(publishOnParallelThreadScheduler(Flux.defer(() -> {
+                subscribeOnThread.set(Thread.currentThread());
+                return Flux.just("Hello");
+            })).map(value -> {
+                publishOnThread.set(Thread.currentThread());
+                return value;
+            }))
+            .expectSubscription()
+            .expectNext("Hello")
+            .verifyComplete();
 
-        Assert.assertTrue(
-                "Expected execution on different Threads",
-                !threads[0].equals(threads[1])
+        Assert.assertEquals(
+            "Expected subscribeOn in the same Thread",
+            subscribeOnThread.get(), Thread.currentThread()
+        );
+        Assert.assertNotEquals(
+            "Expected publishOn different Threads",
+            publishOnThread.get(), Thread.currentThread()
         );
     }
 
